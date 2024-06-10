@@ -1,0 +1,21 @@
+# node/npm
+node_modules
+*.log
+
+# src building
+scripts
+Jenkins
+*.tgz
+.eslintrc.json
+.babelrc
+.dockerignore
+Dockerfile
+
+# test
+__tests__
+.jest-cache
+test-results
+
+# misc
+.DS_Store
+.idea

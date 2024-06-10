@@ -1,0 +1,32 @@
+---
+export const prerender = true;
+import StarlightPage from "@astrojs/starlight/components/StarlightPage.astro";
+
+export async function getStaticPaths() {
+  const allRoutes = ["1", "2", "3"].map((post) => ({
+    params: {
+      slug: post,
+    },
+    props: post,
+  }));
+
+  return allRoutes;
+}
+---
+
+<StarlightPage
+  frontmatter={{ title: 'Orion' }}
+  sidebar={[
+    { label: 'Home', href: '/' },
+    {
+      label: 'Constellations',
+      items: [
+        { label: 'Andromeda', href: '/andromeda/' },
+        { label: 'Orion', href: '/orion/', isCurrent: true },
+        { label: 'Ursa Minor', href: '/ursa-minor/', badge: 'Stub' },
+      ],
+    },
+  ]}
+>
+  Example content.
+</StarlightPage>
