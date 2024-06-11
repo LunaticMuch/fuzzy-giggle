@@ -1,0 +1,8 @@
+Astro                    v4.10.1
+Node                     v18.20.3
+System                   macOS (arm64)
+Package Manager          npm
+Output                   hybrid
+Adapter                  @astrojs/node
+Integrations             @astrojs/starlight
+                         @astrojs/tailwind
