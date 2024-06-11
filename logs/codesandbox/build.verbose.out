@@ -1,0 +1,1816 @@
+
+> @example/starlight-tailwind@0.0.1 build
+> astro build --verbose
+
+2024-06-11T09:30:12.897Z astro:cli --verbose flag enabled! Enabling: DEBUG="astro:*,vite:*"
+2024-06-11T09:30:12.897Z astro:cli Tip: Set the DEBUG env variable directly for more control. Example: "DEBUG=astro:*,vite:* astro build".
+2024-06-11T09:30:13.306Z astro:telemetry [notify] last notified on 1718098007287
+2024-06-11T09:30:13.637Z astro:Failed to load config with Node TypeError [ERR_UNKNOWN_FILE_EXTENSION]: Unknown file extension ".ts" for /project/workspace/node_modules/@astrojs/starlight/index.ts
+    at Object.getFileProtocolModuleFormat [as file:] (node:internal/modules/esm/get_format:160:9)
+    at defaultGetFormat (node:internal/modules/esm/get_format:203:36)
+    at defaultLoad (node:internal/modules/esm/load:143:22)
+    at async ModuleLoader.load (node:internal/modules/esm/loader:403:7)
+    at async ModuleLoader.moduleProvider (node:internal/modules/esm/loader:285:45)
+2024-06-11T09:30:13.646Z vite:config using resolved config: {
+  configFile: undefined,
+  server: {
+    preTransformRequests: true,
+    middlewareMode: true,
+    hmr: false,
+    watch: null,
+    sourcemapIgnoreList: [Function: isInNodeModules$1],
+    fs: {
+      strict: true,
+      allow: [Array],
+      deny: [Array],
+      cachedChecks: undefined
+    }
+  },
+  optimizeDeps: {
+    holdUntilCrawlEnd: true,
+    noDiscovery: true,
+    esbuildOptions: { preserveSymlinks: false }
+  },
+  clearScreen: false,
+  appType: 'custom',
+  ssr: {
+    target: 'node',
+    external: [
+      '@astrojs/tailwind',
+      '@astrojs/mdx',
+      '@astrojs/react',
+      '@astrojs/preact',
+      '@astrojs/sitemap',
+      '@astrojs/markdoc',
+      '@astrojs/db'
+    ],
+    optimizeDeps: { noDiscovery: true, esbuildOptions: [Object] }
+  },
+  plugins: [
+    'vite:watch-package-data',
+    'vite:pre-alias',
+    'alias',
+    'vite:modulepreload-polyfill',
+    'vite:resolve',
+    'vite:html-inline-proxy',
+    'vite:css',
+    'vite:esbuild',
+    'vite:json',
+    'vite:wasm-helper',
+    'vite:worker',
+    'vite:asset',
+    'vite:wasm-fallback',
+    'vite:define',
+    'vite:css-post',
+    'vite:worker-import-meta-url',
+    'vite:asset-import-meta-url',
+    'vite:dynamic-import-vars',
+    'vite:import-glob',
+    'vite:client-inject',
+    'vite:css-analysis',
+    'vite:import-analysis'
+  ],
+  configFileDependencies: [],
+  inlineConfig: {
+    configFile: false,
+    server: { middlewareMode: true, hmr: false, watch: null },
+    optimizeDeps: { noDiscovery: true },
+    clearScreen: false,
+    appType: 'custom',
+    ssr: { external: [Array] },
+    plugins: [ false ]
+  },
+  root: '/project/workspace',
+  base: '/',
+  rawBase: '/',
+  resolve: {
+    mainFields: [ 'browser', 'module', 'jsnext:main', 'jsnext' ],
+    conditions: [],
+    extensions: [
+      '.mjs',  '.js',
+      '.mts',  '.ts',
+      '.jsx',  '.tsx',
+      '.json'
+    ],
+    dedupe: [],
+    preserveSymlinks: false,
+    alias: [ [Object], [Object] ]
+  },
+  publicDir: '/project/workspace/public',
+  cacheDir: '/project/workspace/node_modules/.vite',
+  command: 'serve',
+  mode: 'development',
+  isWorker: false,
+  mainConfig: null,
+  bundleChain: [],
+  isProduction: true,
+  css: { lightningcss: undefined },
+  esbuild: { jsxDev: false },
+  build: {
+    target: [ 'es2020', 'edge88', 'firefox78', 'chrome87', 'safari14' ],
+    cssTarget: [ 'es2020', 'edge88', 'firefox78', 'chrome87', 'safari14' ],
+    outDir: 'dist',
+    assetsDir: 'assets',
+    assetsInlineLimit: 4096,
+    cssCodeSplit: true,
+    sourcemap: false,
+    rollupOptions: {},
+    minify: 'esbuild',
+    terserOptions: {},
+    write: true,
+    emptyOutDir: null,
+    copyPublicDir: true,
+    manifest: false,
+    lib: false,
+    ssr: false,
+    ssrManifest: false,
+    ssrEmitAssets: false,
+    reportCompressedSize: true,
+    chunkSizeWarningLimit: 500,
+    watch: null,
+    commonjsOptions: { include: [Array], extensions: [Array] },
+    dynamicImportVarsOptions: { warnOnError: true, exclude: [Array] },
+    modulePreload: { polyfill: true },
+    cssMinify: true
+  },
+  preview: {
+    port: undefined,
+    strictPort: undefined,
+    host: undefined,
+    https: undefined,
+    open: undefined,
+    proxy: undefined,
+    cors: undefined,
+    headers: undefined
+  },
+  envDir: '/project/workspace',
+  env: { BASE_URL: '/', MODE: 'development', DEV: false, PROD: true },
+  assetsInclude: [Function: assetsInclude],
+  logger: {
+    hasWarned: false,
+    info: [Function: info],
+    warn: [Function: warn],
+    warnOnce: [Function: warnOnce],
+    error: [Function: error],
+    clearScreen: [Function: clearScreen],
+    hasErrorLogged: [Function: hasErrorLogged]
+  },
+  packageCache: Map(1) {
+    'fnpd_/project/workspace' => {
+      dir: '/project/workspace',
+      data: [Object],
+      hasSideEffects: [Function: hasSideEffects],
+      webResolvedImports: {},
+      nodeResolvedImports: {},
+      setResolvedCache: [Function: setResolvedCache],
+      getResolvedCache: [Function: getResolvedCache]
+    },
+    set: [Function (anonymous)]
+  },
+  createResolver: [Function: createResolver],
+  worker: { format: 'iife', plugins: '() => plugins', rollupOptions: {} },
+  experimental: { importGlobRestoreExtension: false, hmrPartialAccept: false },
+  getSortedPlugins: [Function: getSortedPlugins],
+  getSortedPluginHooks: [Function: getSortedPluginHooks]
+}
+2024-06-11T09:30:13.664Z vite:load 1.66ms [fs] astro.config.mjs
+2024-06-11T09:30:13.671Z vite:resolve 0.67ms @astrojs/starlight -> /project/workspace/node_modules/@astrojs/starlight/index.ts
+2024-06-11T09:30:13.672Z vite:resolve 0.36ms /node_modules/@astrojs/starlight/index.ts -> /project/workspace/node_modules/@astrojs/starlight/index.ts
+2024-06-11T09:30:13.672Z vite:import-analysis 5.26ms [1 imports rewritten] astro.config.mjs
+2024-06-11T09:30:13.672Z vite:transform 7.72ms astro.config.mjs
+2024-06-11T09:30:13.689Z vite:load 15.86ms [fs] /node_modules/@astrojs/starlight/index.ts
+2024-06-11T09:30:13.723Z vite:resolve 1.12ms ./integrations/asides -> /project/workspace/node_modules/@astrojs/starlight/integrations/asides.ts
+2024-06-11T09:30:13.723Z vite:resolve 1.33ms ./integrations/expressive-code/index -> /project/workspace/node_modules/@astrojs/starlight/integrations/expressive-code/index.ts
+2024-06-11T09:30:13.724Z vite:resolve 1.38ms ./integrations/sitemap -> /project/workspace/node_modules/@astrojs/starlight/integrations/sitemap.ts
+2024-06-11T09:30:13.724Z vite:resolve 1.49ms ./integrations/virtual-user-config -> /project/workspace/node_modules/@astrojs/starlight/integrations/virtual-user-config.ts
+2024-06-11T09:30:13.724Z vite:resolve 1.66ms ./integrations/code-rtl-support -> /project/workspace/node_modules/@astrojs/starlight/integrations/code-rtl-support.ts
+2024-06-11T09:30:13.724Z vite:resolve 1.76ms ./utils/translations-fs -> /project/workspace/node_modules/@astrojs/starlight/utils/translations-fs.ts
+2024-06-11T09:30:13.724Z vite:resolve 1.89ms ./utils/plugins -> /project/workspace/node_modules/@astrojs/starlight/utils/plugins.ts
+2024-06-11T09:30:13.725Z vite:resolve 0.89ms /node_modules/@astrojs/starlight/integrations/asides.ts -> /project/workspace/node_modules/@astrojs/starlight/integrations/asides.ts
+2024-06-11T09:30:13.725Z vite:resolve 0.92ms /node_modules/@astrojs/starlight/integrations/expressive-code/index.ts -> /project/workspace/node_modules/@astrojs/starlight/integrations/expressive-code/index.ts
+2024-06-11T09:30:13.725Z vite:resolve 0.97ms /node_modules/@astrojs/starlight/integrations/sitemap.ts -> /project/workspace/node_modules/@astrojs/starlight/integrations/sitemap.ts
+2024-06-11T09:30:13.726Z vite:resolve 1.08ms /node_modules/@astrojs/starlight/integrations/virtual-user-config.ts -> /project/workspace/node_modules/@astrojs/starlight/integrations/virtual-user-config.ts
+2024-06-11T09:30:13.726Z vite:resolve 1.14ms /node_modules/@astrojs/starlight/integrations/code-rtl-support.ts -> /project/workspace/node_modules/@astrojs/starlight/integrations/code-rtl-support.ts
+2024-06-11T09:30:13.726Z vite:resolve 1.19ms /node_modules/@astrojs/starlight/utils/translations-fs.ts -> /project/workspace/node_modules/@astrojs/starlight/utils/translations-fs.ts
+2024-06-11T09:30:13.726Z vite:resolve 1.22ms /node_modules/@astrojs/starlight/utils/plugins.ts -> /project/workspace/node_modules/@astrojs/starlight/utils/plugins.ts
+2024-06-11T09:30:13.726Z vite:import-analysis 6.37ms [7 imports rewritten] node_modules/@astrojs/starlight/index.ts
+2024-06-11T09:30:13.727Z vite:transform 37.62ms /node_modules/@astrojs/starlight/index.ts
+2024-06-11T09:30:13.744Z vite:load 16.78ms [fs] /node_modules/@astrojs/starlight/integrations/asides.ts
+2024-06-11T09:30:13.745Z vite:load 17.67ms [fs] /node_modules/@astrojs/starlight/integrations/expressive-code/index.ts
+2024-06-11T09:30:13.745Z vite:load 18.08ms [fs] /node_modules/@astrojs/starlight/integrations/sitemap.ts
+2024-06-11T09:30:13.745Z vite:load 18.47ms [fs] /node_modules/@astrojs/starlight/integrations/virtual-user-config.ts
+2024-06-11T09:30:13.746Z vite:load 18.87ms [fs] /node_modules/@astrojs/starlight/integrations/code-rtl-support.ts
+2024-06-11T09:30:13.746Z vite:load 19.32ms [fs] /node_modules/@astrojs/starlight/utils/translations-fs.ts
+2024-06-11T09:30:13.747Z vite:load 19.64ms [fs] /node_modules/@astrojs/starlight/utils/plugins.ts
+2024-06-11T09:30:13.751Z vite:resolve 0.21ms ./shared/pathToLocale -> /project/workspace/node_modules/@astrojs/starlight/integrations/shared/pathToLocale.ts
+2024-06-11T09:30:13.752Z vite:resolve 0.18ms /node_modules/@astrojs/starlight/integrations/shared/pathToLocale.ts -> /project/workspace/node_modules/@astrojs/starlight/integrations/shared/pathToLocale.ts
+2024-06-11T09:30:13.752Z vite:import-analysis 4.66ms [1 imports rewritten] node_modules/@astrojs/starlight/integrations/asides.ts
+2024-06-11T09:30:13.752Z vite:transform 8.40ms /node_modules/@astrojs/starlight/integrations/asides.ts
+2024-06-11T09:30:13.757Z vite:import-analysis 2.68ms [0 imports rewritten] node_modules/@astrojs/starlight/integrations/virtual-user-config.ts
+2024-06-11T09:30:13.757Z vite:import-analysis 2.17ms [0 imports rewritten] node_modules/@astrojs/starlight/integrations/code-rtl-support.ts
+2024-06-11T09:30:13.758Z vite:transform 11.98ms /node_modules/@astrojs/starlight/integrations/virtual-user-config.ts
+2024-06-11T09:30:13.758Z vite:transform 11.66ms /node_modules/@astrojs/starlight/integrations/code-rtl-support.ts
+2024-06-11T09:30:13.758Z vite:resolve 0.93ms ./createTranslationSystem -> /project/workspace/node_modules/@astrojs/starlight/utils/createTranslationSystem.ts
+2024-06-11T09:30:13.759Z vite:resolve 0.18ms /node_modules/@astrojs/starlight/utils/createTranslationSystem.ts -> /project/workspace/node_modules/@astrojs/starlight/utils/createTranslationSystem.ts
+2024-06-11T09:30:13.759Z vite:import-analysis 4.57ms [1 imports rewritten] node_modules/@astrojs/starlight/utils/translations-fs.ts
+2024-06-11T09:30:13.759Z vite:transform 12.74ms /node_modules/@astrojs/starlight/utils/translations-fs.ts
+2024-06-11T09:30:13.802Z vite:import-analysis 1.85ms [0 imports rewritten] node_modules/@astrojs/starlight/integrations/sitemap.ts
+2024-06-11T09:30:13.803Z vite:transform 57.54ms /node_modules/@astrojs/starlight/integrations/sitemap.ts
+2024-06-11T09:30:13.803Z vite:resolve 1.86ms ../utils/user-config -> /project/workspace/node_modules/@astrojs/starlight/utils/user-config.ts
+2024-06-11T09:30:13.803Z vite:resolve 1.90ms ../utils/error-map -> /project/workspace/node_modules/@astrojs/starlight/utils/error-map.ts
+2024-06-11T09:30:13.803Z vite:resolve 1.03ms ../shared/pathToLocale -> /project/workspace/node_modules/@astrojs/starlight/integrations/shared/pathToLocale.ts
+2024-06-11T09:30:13.803Z vite:resolve 1.08ms ./theming -> /project/workspace/node_modules/@astrojs/starlight/integrations/expressive-code/theming.ts
+2024-06-11T09:30:13.803Z vite:resolve 1.13ms ./translations -> /project/workspace/node_modules/@astrojs/starlight/integrations/expressive-code/translations.ts
+2024-06-11T09:30:13.804Z vite:resolve 0.57ms /node_modules/@astrojs/starlight/utils/user-config.ts -> /project/workspace/node_modules/@astrojs/starlight/utils/user-config.ts
+2024-06-11T09:30:13.804Z vite:resolve 0.53ms /node_modules/@astrojs/starlight/utils/error-map.ts -> /project/workspace/node_modules/@astrojs/starlight/utils/error-map.ts
+2024-06-11T09:30:13.804Z vite:resolve 0.52ms /node_modules/@astrojs/starlight/integrations/expressive-code/theming.ts -> /project/workspace/node_modules/@astrojs/starlight/integrations/expressive-code/theming.ts
+2024-06-11T09:30:13.804Z vite:resolve 0.56ms /node_modules/@astrojs/starlight/integrations/expressive-code/translations.ts -> /project/workspace/node_modules/@astrojs/starlight/integrations/expressive-code/translations.ts
+2024-06-11T09:30:13.804Z vite:import-analysis 4.30ms [2 imports rewritten] node_modules/@astrojs/starlight/utils/plugins.ts
+2024-06-11T09:30:13.805Z vite:import-analysis 4.38ms [3 imports rewritten] node_modules/@astrojs/starlight/integrations/expressive-code/index.ts
+2024-06-11T09:30:13.805Z vite:transform 57.91ms /node_modules/@astrojs/starlight/utils/plugins.ts
+2024-06-11T09:30:13.805Z vite:transform 60.09ms /node_modules/@astrojs/starlight/integrations/expressive-code/index.ts
+2024-06-11T09:30:13.824Z vite:load 71.29ms [fs] /node_modules/@astrojs/starlight/integrations/shared/pathToLocale.ts
+2024-06-11T09:30:13.830Z vite:load 71.05ms [fs] /node_modules/@astrojs/starlight/utils/createTranslationSystem.ts
+2024-06-11T09:30:13.831Z vite:load 26.41ms [fs] /node_modules/@astrojs/starlight/utils/user-config.ts
+2024-06-11T09:30:13.832Z vite:load 26.83ms [fs] /node_modules/@astrojs/starlight/utils/error-map.ts
+2024-06-11T09:30:13.832Z vite:load 27.07ms [fs] /node_modules/@astrojs/starlight/integrations/expressive-code/theming.ts
+2024-06-11T09:30:13.832Z vite:load 27.32ms [fs] /node_modules/@astrojs/starlight/integrations/expressive-code/translations.ts
+2024-06-11T09:30:13.833Z vite:import-analysis 0.06ms [no imports] node_modules/@astrojs/starlight/integrations/shared/pathToLocale.ts
+2024-06-11T09:30:13.833Z vite:transform 9.15ms /node_modules/@astrojs/starlight/integrations/shared/pathToLocale.ts
+2024-06-11T09:30:13.834Z vite:resolve 0.43ms ../translations/index -> /project/workspace/node_modules/@astrojs/starlight/translations/index.ts
+2024-06-11T09:30:13.834Z vite:resolve 0.25ms /node_modules/@astrojs/starlight/translations/index.ts -> /project/workspace/node_modules/@astrojs/starlight/translations/index.ts
+2024-06-11T09:30:13.834Z vite:import-analysis 1.25ms [1 imports rewritten] node_modules/@astrojs/starlight/utils/createTranslationSystem.ts
+2024-06-11T09:30:13.834Z vite:transform 3.71ms /node_modules/@astrojs/starlight/utils/createTranslationSystem.ts
+2024-06-11T09:30:13.838Z vite:resolve 0.25ms ../shared/localeToLang -> /project/workspace/node_modules/@astrojs/starlight/integrations/shared/localeToLang.ts
+2024-06-11T09:30:13.838Z vite:resolve 0.25ms ./themes/night-owl-dark.jsonc?raw -> /project/workspace/node_modules/@astrojs/starlight/integrations/expressive-code/themes/night-owl-dark.jsonc?raw
+2024-06-11T09:30:13.838Z vite:resolve 0.27ms ./themes/night-owl-light.jsonc?raw -> /project/workspace/node_modules/@astrojs/starlight/integrations/expressive-code/themes/night-owl-light.jsonc?raw
+2024-06-11T09:30:13.838Z vite:resolve 0.38ms /node_modules/@astrojs/starlight/integrations/shared/localeToLang.ts -> /project/workspace/node_modules/@astrojs/starlight/integrations/shared/localeToLang.ts
+2024-06-11T09:30:13.838Z vite:resolve 0.39ms /node_modules/@astrojs/starlight/integrations/expressive-code/themes/night-owl-dark.jsonc?raw -> /project/workspace/node_modules/@astrojs/starlight/integrations/expressive-code/themes/night-owl-dark.jsonc?raw
+2024-06-11T09:30:13.838Z vite:resolve 0.40ms /node_modules/@astrojs/starlight/integrations/expressive-code/themes/night-owl-light.jsonc?raw -> /project/workspace/node_modules/@astrojs/starlight/integrations/expressive-code/themes/night-owl-light.jsonc?raw
+2024-06-11T09:30:13.839Z vite:import-analysis 1.37ms [1 imports rewritten] node_modules/@astrojs/starlight/integrations/expressive-code/translations.ts
+2024-06-11T09:30:13.839Z vite:import-analysis 1.43ms [2 imports rewritten] node_modules/@astrojs/starlight/integrations/expressive-code/theming.ts
+2024-06-11T09:30:13.839Z vite:transform 6.45ms /node_modules/@astrojs/starlight/integrations/expressive-code/translations.ts
+2024-06-11T09:30:13.839Z vite:transform 6.78ms /node_modules/@astrojs/starlight/integrations/expressive-code/theming.ts
+2024-06-11T09:30:13.848Z vite:import-analysis 1.21ms [0 imports rewritten] node_modules/@astrojs/starlight/utils/error-map.ts
+2024-06-11T09:30:13.849Z vite:transform 16.89ms /node_modules/@astrojs/starlight/utils/error-map.ts
+2024-06-11T09:30:13.849Z vite:resolve 1.17ms ../schemas/components -> /project/workspace/node_modules/@astrojs/starlight/schemas/components.ts
+2024-06-11T09:30:13.849Z vite:resolve 1.24ms ../schemas/expressiveCode -> /project/workspace/node_modules/@astrojs/starlight/schemas/expressiveCode.ts
+2024-06-11T09:30:13.849Z vite:resolve 1.34ms ../schemas/favicon -> /project/workspace/node_modules/@astrojs/starlight/schemas/favicon.ts
+2024-06-11T09:30:13.849Z vite:resolve 1.41ms ../schemas/head -> /project/workspace/node_modules/@astrojs/starlight/schemas/head.ts
+2024-06-11T09:30:13.849Z vite:resolve 1.48ms ../schemas/logo -> /project/workspace/node_modules/@astrojs/starlight/schemas/logo.ts
+2024-06-11T09:30:13.849Z vite:resolve 1.55ms ../schemas/sidebar -> /project/workspace/node_modules/@astrojs/starlight/schemas/sidebar.ts
+2024-06-11T09:30:13.849Z vite:resolve 1.63ms ../schemas/social -> /project/workspace/node_modules/@astrojs/starlight/schemas/social.ts
+2024-06-11T09:30:13.849Z vite:resolve 1.70ms ../schemas/tableOfContents -> /project/workspace/node_modules/@astrojs/starlight/schemas/tableOfContents.ts
+2024-06-11T09:30:13.849Z vite:resolve 1.77ms ../schemas/site-title -> /project/workspace/node_modules/@astrojs/starlight/schemas/site-title.ts
+2024-06-11T09:30:13.850Z vite:resolve 0.72ms /node_modules/@astrojs/starlight/schemas/components.ts -> /project/workspace/node_modules/@astrojs/starlight/schemas/components.ts
+2024-06-11T09:30:13.850Z vite:resolve 0.79ms /node_modules/@astrojs/starlight/schemas/expressiveCode.ts -> /project/workspace/node_modules/@astrojs/starlight/schemas/expressiveCode.ts
+2024-06-11T09:30:13.851Z vite:resolve 0.84ms /node_modules/@astrojs/starlight/schemas/favicon.ts -> /project/workspace/node_modules/@astrojs/starlight/schemas/favicon.ts
+2024-06-11T09:30:13.851Z vite:resolve 0.90ms /node_modules/@astrojs/starlight/schemas/head.ts -> /project/workspace/node_modules/@astrojs/starlight/schemas/head.ts
+2024-06-11T09:30:13.851Z vite:resolve 0.96ms /node_modules/@astrojs/starlight/schemas/logo.ts -> /project/workspace/node_modules/@astrojs/starlight/schemas/logo.ts
+2024-06-11T09:30:13.851Z vite:resolve 1.02ms /node_modules/@astrojs/starlight/schemas/sidebar.ts -> /project/workspace/node_modules/@astrojs/starlight/schemas/sidebar.ts
+2024-06-11T09:30:13.851Z vite:resolve 1.08ms /node_modules/@astrojs/starlight/schemas/social.ts -> /project/workspace/node_modules/@astrojs/starlight/schemas/social.ts
+2024-06-11T09:30:13.851Z vite:resolve 1.14ms /node_modules/@astrojs/starlight/schemas/tableOfContents.ts -> /project/workspace/node_modules/@astrojs/starlight/schemas/tableOfContents.ts
+2024-06-11T09:30:13.851Z vite:resolve 1.19ms /node_modules/@astrojs/starlight/schemas/site-title.ts -> /project/workspace/node_modules/@astrojs/starlight/schemas/site-title.ts
+2024-06-11T09:30:13.851Z vite:import-analysis 4.60ms [9 imports rewritten] node_modules/@astrojs/starlight/utils/user-config.ts
+2024-06-11T09:30:13.852Z vite:transform 20.32ms /node_modules/@astrojs/starlight/utils/user-config.ts
+2024-06-11T09:30:13.853Z vite:load 18.75ms [fs] /node_modules/@astrojs/starlight/translations/index.ts
+2024-06-11T09:30:13.864Z vite:resolve 1.05ms ../schemas/i18n -> /project/workspace/node_modules/@astrojs/starlight/schemas/i18n.ts
+2024-06-11T09:30:13.864Z vite:resolve 1.13ms ./cs.json -> /project/workspace/node_modules/@astrojs/starlight/translations/cs.json
+2024-06-11T09:30:13.864Z vite:resolve 1.15ms ./en.json -> /project/workspace/node_modules/@astrojs/starlight/translations/en.json
+2024-06-11T09:30:13.864Z vite:resolve 1.17ms ./es.json -> /project/workspace/node_modules/@astrojs/starlight/translations/es.json
+2024-06-11T09:30:13.864Z vite:resolve 1.20ms ./de.json -> /project/workspace/node_modules/@astrojs/starlight/translations/de.json
+2024-06-11T09:30:13.864Z vite:resolve 1.11ms ./ja.json -> /project/workspace/node_modules/@astrojs/starlight/translations/ja.json
+2024-06-11T09:30:13.864Z vite:resolve 1.13ms ./pt.json -> /project/workspace/node_modules/@astrojs/starlight/translations/pt.json
+2024-06-11T09:30:13.864Z vite:resolve 1.15ms ./fa.json -> /project/workspace/node_modules/@astrojs/starlight/translations/fa.json
+2024-06-11T09:30:13.864Z vite:resolve 1.17ms ./fr.json -> /project/workspace/node_modules/@astrojs/starlight/translations/fr.json
+2024-06-11T09:30:13.864Z vite:resolve 1.19ms ./gl.json -> /project/workspace/node_modules/@astrojs/starlight/translations/gl.json
+2024-06-11T09:30:13.864Z vite:resolve 1.21ms ./he.json -> /project/workspace/node_modules/@astrojs/starlight/translations/he.json
+2024-06-11T09:30:13.864Z vite:resolve 1.23ms ./id.json -> /project/workspace/node_modules/@astrojs/starlight/translations/id.json
+2024-06-11T09:30:13.865Z vite:resolve 1.25ms ./it.json -> /project/workspace/node_modules/@astrojs/starlight/translations/it.json
+2024-06-11T09:30:13.865Z vite:resolve 1.27ms ./nl.json -> /project/workspace/node_modules/@astrojs/starlight/translations/nl.json
+2024-06-11T09:30:13.865Z vite:resolve 1.29ms ./da.json -> /project/workspace/node_modules/@astrojs/starlight/translations/da.json
+2024-06-11T09:30:13.865Z vite:resolve 1.31ms ./tr.json -> /project/workspace/node_modules/@astrojs/starlight/translations/tr.json
+2024-06-11T09:30:13.865Z vite:resolve 1.33ms ./ar.json -> /project/workspace/node_modules/@astrojs/starlight/translations/ar.json
+2024-06-11T09:30:13.865Z vite:resolve 1.34ms ./nb.json -> /project/workspace/node_modules/@astrojs/starlight/translations/nb.json
+2024-06-11T09:30:13.865Z vite:resolve 1.36ms ./zh-CN.json -> /project/workspace/node_modules/@astrojs/starlight/translations/zh-CN.json
+2024-06-11T09:30:13.865Z vite:resolve 1.38ms ./ko.json -> /project/workspace/node_modules/@astrojs/starlight/translations/ko.json
+2024-06-11T09:30:13.865Z vite:resolve 1.40ms ./sv.json -> /project/workspace/node_modules/@astrojs/starlight/translations/sv.json
+2024-06-11T09:30:13.865Z vite:resolve 1.42ms ./ro.json -> /project/workspace/node_modules/@astrojs/starlight/translations/ro.json
+2024-06-11T09:30:13.865Z vite:resolve 1.44ms ./ru.json -> /project/workspace/node_modules/@astrojs/starlight/translations/ru.json
+2024-06-11T09:30:13.865Z vite:resolve 1.52ms ./vi.json -> /project/workspace/node_modules/@astrojs/starlight/translations/vi.json
+2024-06-11T09:30:13.865Z vite:resolve 1.57ms ./uk.json -> /project/workspace/node_modules/@astrojs/starlight/translations/uk.json
+2024-06-11T09:30:13.865Z vite:resolve 1.60ms ./hi.json -> /project/workspace/node_modules/@astrojs/starlight/translations/hi.json
+2024-06-11T09:30:13.865Z vite:resolve 1.62ms ./zh-TW.json -> /project/workspace/node_modules/@astrojs/starlight/translations/zh-TW.json
+2024-06-11T09:30:13.865Z vite:resolve 1.64ms ./pl.json -> /project/workspace/node_modules/@astrojs/starlight/translations/pl.json
+2024-06-11T09:30:13.867Z vite:resolve 1.94ms /node_modules/@astrojs/starlight/schemas/i18n.ts -> /project/workspace/node_modules/@astrojs/starlight/schemas/i18n.ts
+2024-06-11T09:30:13.867Z vite:resolve 1.97ms /node_modules/@astrojs/starlight/translations/cs.json -> /project/workspace/node_modules/@astrojs/starlight/translations/cs.json
+2024-06-11T09:30:13.867Z vite:resolve 2.03ms /node_modules/@astrojs/starlight/translations/en.json -> /project/workspace/node_modules/@astrojs/starlight/translations/en.json
+2024-06-11T09:30:13.867Z vite:resolve 2.06ms /node_modules/@astrojs/starlight/translations/es.json -> /project/workspace/node_modules/@astrojs/starlight/translations/es.json
+2024-06-11T09:30:13.867Z vite:resolve 2.07ms /node_modules/@astrojs/starlight/translations/de.json -> /project/workspace/node_modules/@astrojs/starlight/translations/de.json
+2024-06-11T09:30:13.867Z vite:resolve 2.09ms /node_modules/@astrojs/starlight/translations/ja.json -> /project/workspace/node_modules/@astrojs/starlight/translations/ja.json
+2024-06-11T09:30:13.867Z vite:resolve 2.11ms /node_modules/@astrojs/starlight/translations/pt.json -> /project/workspace/node_modules/@astrojs/starlight/translations/pt.json
+2024-06-11T09:30:13.867Z vite:resolve 2.12ms /node_modules/@astrojs/starlight/translations/fa.json -> /project/workspace/node_modules/@astrojs/starlight/translations/fa.json
+2024-06-11T09:30:13.867Z vite:resolve 2.13ms /node_modules/@astrojs/starlight/translations/fr.json -> /project/workspace/node_modules/@astrojs/starlight/translations/fr.json
+2024-06-11T09:30:13.867Z vite:resolve 2.14ms /node_modules/@astrojs/starlight/translations/gl.json -> /project/workspace/node_modules/@astrojs/starlight/translations/gl.json
+2024-06-11T09:30:13.868Z vite:resolve 3.14ms /node_modules/@astrojs/starlight/translations/he.json -> /project/workspace/node_modules/@astrojs/starlight/translations/he.json
+2024-06-11T09:30:13.869Z vite:resolve 3.23ms /node_modules/@astrojs/starlight/translations/id.json -> /project/workspace/node_modules/@astrojs/starlight/translations/id.json
+2024-06-11T09:30:13.869Z vite:resolve 3.29ms /node_modules/@astrojs/starlight/translations/it.json -> /project/workspace/node_modules/@astrojs/starlight/translations/it.json
+2024-06-11T09:30:13.869Z vite:resolve 3.35ms /node_modules/@astrojs/starlight/translations/nl.json -> /project/workspace/node_modules/@astrojs/starlight/translations/nl.json
+2024-06-11T09:30:13.869Z vite:resolve 3.41ms /node_modules/@astrojs/starlight/translations/da.json -> /project/workspace/node_modules/@astrojs/starlight/translations/da.json
+2024-06-11T09:30:13.869Z vite:resolve 3.50ms /node_modules/@astrojs/starlight/translations/tr.json -> /project/workspace/node_modules/@astrojs/starlight/translations/tr.json
+2024-06-11T09:30:13.869Z vite:resolve 3.56ms /node_modules/@astrojs/starlight/translations/ar.json -> /project/workspace/node_modules/@astrojs/starlight/translations/ar.json
+2024-06-11T09:30:13.869Z vite:resolve 3.62ms /node_modules/@astrojs/starlight/translations/nb.json -> /project/workspace/node_modules/@astrojs/starlight/translations/nb.json
+2024-06-11T09:30:13.869Z vite:resolve 3.67ms /node_modules/@astrojs/starlight/translations/zh-CN.json -> /project/workspace/node_modules/@astrojs/starlight/translations/zh-CN.json
+2024-06-11T09:30:13.869Z vite:resolve 3.73ms /node_modules/@astrojs/starlight/translations/ko.json -> /project/workspace/node_modules/@astrojs/starlight/translations/ko.json
+2024-06-11T09:30:13.869Z vite:resolve 3.79ms /node_modules/@astrojs/starlight/translations/sv.json -> /project/workspace/node_modules/@astrojs/starlight/translations/sv.json
+2024-06-11T09:30:13.869Z vite:resolve 3.85ms /node_modules/@astrojs/starlight/translations/ro.json -> /project/workspace/node_modules/@astrojs/starlight/translations/ro.json
+2024-06-11T09:30:13.869Z vite:resolve 3.91ms /node_modules/@astrojs/starlight/translations/ru.json -> /project/workspace/node_modules/@astrojs/starlight/translations/ru.json
+2024-06-11T09:30:13.870Z vite:resolve 3.97ms /node_modules/@astrojs/starlight/translations/vi.json -> /project/workspace/node_modules/@astrojs/starlight/translations/vi.json
+2024-06-11T09:30:13.870Z vite:resolve 4.03ms /node_modules/@astrojs/starlight/translations/uk.json -> /project/workspace/node_modules/@astrojs/starlight/translations/uk.json
+2024-06-11T09:30:13.870Z vite:resolve 4.09ms /node_modules/@astrojs/starlight/translations/hi.json -> /project/workspace/node_modules/@astrojs/starlight/translations/hi.json
+2024-06-11T09:30:13.870Z vite:resolve 4.15ms /node_modules/@astrojs/starlight/translations/zh-TW.json -> /project/workspace/node_modules/@astrojs/starlight/translations/zh-TW.json
+2024-06-11T09:30:13.870Z vite:resolve 4.21ms /node_modules/@astrojs/starlight/translations/pl.json -> /project/workspace/node_modules/@astrojs/starlight/translations/pl.json
+2024-06-11T09:30:13.871Z vite:import-analysis 8.20ms [28 imports rewritten] node_modules/@astrojs/starlight/translations/index.ts
+2024-06-11T09:30:13.871Z vite:transform 18.17ms /node_modules/@astrojs/starlight/translations/index.ts
+2024-06-11T09:30:13.874Z vite:load 34.47ms [plugin] /node_modules/@astrojs/starlight/integrations/expressive-code/themes/night-owl-dark.jsonc?raw
+2024-06-11T09:30:13.875Z vite:resolve 0.06ms /node_modules/@astrojs/starlight/integrations/expressive-code/themes/night-owl-dark.jsonc -> /project/workspace/node_modules/@astrojs/starlight/integrations/expressive-code/themes/night-owl-dark.jsonc
+2024-06-11T09:30:13.875Z vite:import-analysis 0.87ms [1 imports rewritten] node_modules/@astrojs/starlight/integrations/expressive-code/themes/night-owl-dark.jsonc?raw
+2024-06-11T09:30:13.875Z vite:transform 1.06ms /node_modules/@astrojs/starlight/integrations/expressive-code/themes/night-owl-dark.jsonc?raw
+2024-06-11T09:30:13.875Z vite:load 35.98ms [plugin] /node_modules/@astrojs/starlight/integrations/expressive-code/themes/night-owl-light.jsonc?raw
+2024-06-11T09:30:13.876Z vite:resolve 0.05ms /node_modules/@astrojs/starlight/integrations/expressive-code/themes/night-owl-light.jsonc -> /project/workspace/node_modules/@astrojs/starlight/integrations/expressive-code/themes/night-owl-light.jsonc
+2024-06-11T09:30:13.876Z vite:import-analysis 0.71ms [1 imports rewritten] node_modules/@astrojs/starlight/integrations/expressive-code/themes/night-owl-light.jsonc?raw
+2024-06-11T09:30:13.876Z vite:transform 0.88ms /node_modules/@astrojs/starlight/integrations/expressive-code/themes/night-owl-light.jsonc?raw
+2024-06-11T09:30:13.876Z vite:load 37.33ms [fs] /node_modules/@astrojs/starlight/integrations/shared/localeToLang.ts
+2024-06-11T09:30:13.904Z vite:import-analysis 0.05ms [no imports] node_modules/@astrojs/starlight/integrations/shared/localeToLang.ts
+2024-06-11T09:30:13.904Z vite:transform 27.47ms /node_modules/@astrojs/starlight/integrations/shared/localeToLang.ts
+2024-06-11T09:30:13.904Z vite:load 52.25ms [fs] /node_modules/@astrojs/starlight/schemas/components.ts
+2024-06-11T09:30:13.905Z vite:load 53.24ms [fs] /node_modules/@astrojs/starlight/schemas/expressiveCode.ts
+2024-06-11T09:30:13.905Z vite:load 53.48ms [fs] /node_modules/@astrojs/starlight/schemas/favicon.ts
+2024-06-11T09:30:13.906Z vite:load 53.79ms [fs] /node_modules/@astrojs/starlight/schemas/head.ts
+2024-06-11T09:30:13.906Z vite:load 54.07ms [fs] /node_modules/@astrojs/starlight/schemas/logo.ts
+2024-06-11T09:30:13.906Z vite:load 54.27ms [fs] /node_modules/@astrojs/starlight/schemas/sidebar.ts
+2024-06-11T09:30:13.906Z vite:load 54.46ms [fs] /node_modules/@astrojs/starlight/schemas/social.ts
+2024-06-11T09:30:13.906Z vite:load 54.65ms [fs] /node_modules/@astrojs/starlight/schemas/tableOfContents.ts
+2024-06-11T09:30:13.907Z vite:load 54.82ms [fs] /node_modules/@astrojs/starlight/schemas/site-title.ts
+2024-06-11T09:30:13.908Z vite:load 36.76ms [fs] /node_modules/@astrojs/starlight/schemas/i18n.ts
+2024-06-11T09:30:13.908Z vite:load 37.00ms [fs] /node_modules/@astrojs/starlight/translations/cs.json
+2024-06-11T09:30:13.909Z vite:import-analysis [skipped] node_modules/@astrojs/starlight/translations/cs.json
+2024-06-11T09:30:13.909Z vite:transform 0.95ms /node_modules/@astrojs/starlight/translations/cs.json
+2024-06-11T09:30:13.910Z vite:load 38.20ms [fs] /node_modules/@astrojs/starlight/translations/en.json
+2024-06-11T09:30:13.910Z vite:import-analysis [skipped] node_modules/@astrojs/starlight/translations/en.json
+2024-06-11T09:30:13.910Z vite:transform 0.37ms /node_modules/@astrojs/starlight/translations/en.json
+2024-06-11T09:30:13.910Z vite:load 38.78ms [fs] /node_modules/@astrojs/starlight/translations/es.json
+2024-06-11T09:30:13.910Z vite:import-analysis [skipped] node_modules/@astrojs/starlight/translations/es.json
+2024-06-11T09:30:13.910Z vite:transform 0.27ms /node_modules/@astrojs/starlight/translations/es.json
+2024-06-11T09:30:13.911Z vite:load 39.25ms [fs] /node_modules/@astrojs/starlight/translations/de.json
+2024-06-11T09:30:13.911Z vite:import-analysis [skipped] node_modules/@astrojs/starlight/translations/de.json
+2024-06-11T09:30:13.911Z vite:transform 0.24ms /node_modules/@astrojs/starlight/translations/de.json
+2024-06-11T09:30:13.911Z vite:load 39.68ms [fs] /node_modules/@astrojs/starlight/translations/ja.json
+2024-06-11T09:30:13.911Z vite:import-analysis [skipped] node_modules/@astrojs/starlight/translations/ja.json
+2024-06-11T09:30:13.911Z vite:transform 0.19ms /node_modules/@astrojs/starlight/translations/ja.json
+2024-06-11T09:30:13.911Z vite:load 40.07ms [fs] /node_modules/@astrojs/starlight/translations/pt.json
+2024-06-11T09:30:13.912Z vite:import-analysis [skipped] node_modules/@astrojs/starlight/translations/pt.json
+2024-06-11T09:30:13.912Z vite:transform 0.19ms /node_modules/@astrojs/starlight/translations/pt.json
+2024-06-11T09:30:13.912Z vite:load 40.43ms [fs] /node_modules/@astrojs/starlight/translations/fa.json
+2024-06-11T09:30:13.912Z vite:import-analysis [skipped] node_modules/@astrojs/starlight/translations/fa.json
+2024-06-11T09:30:13.912Z vite:transform 0.18ms /node_modules/@astrojs/starlight/translations/fa.json
+2024-06-11T09:30:13.912Z vite:load 40.78ms [fs] /node_modules/@astrojs/starlight/translations/fr.json
+2024-06-11T09:30:13.912Z vite:import-analysis [skipped] node_modules/@astrojs/starlight/translations/fr.json
+2024-06-11T09:30:13.912Z vite:transform 0.18ms /node_modules/@astrojs/starlight/translations/fr.json
+2024-06-11T09:30:13.912Z vite:load 41.14ms [fs] /node_modules/@astrojs/starlight/translations/gl.json
+2024-06-11T09:30:13.913Z vite:import-analysis [skipped] node_modules/@astrojs/starlight/translations/gl.json
+2024-06-11T09:30:13.913Z vite:transform 0.17ms /node_modules/@astrojs/starlight/translations/gl.json
+2024-06-11T09:30:13.913Z vite:load 41.48ms [fs] /node_modules/@astrojs/starlight/translations/he.json
+2024-06-11T09:30:13.913Z vite:import-analysis [skipped] node_modules/@astrojs/starlight/translations/he.json
+2024-06-11T09:30:13.913Z vite:transform 0.21ms /node_modules/@astrojs/starlight/translations/he.json
+2024-06-11T09:30:13.913Z vite:load 41.86ms [fs] /node_modules/@astrojs/starlight/translations/id.json
+2024-06-11T09:30:13.913Z vite:import-analysis [skipped] node_modules/@astrojs/starlight/translations/id.json
+2024-06-11T09:30:13.913Z vite:transform 0.17ms /node_modules/@astrojs/starlight/translations/id.json
+2024-06-11T09:30:13.914Z vite:load 42.19ms [fs] /node_modules/@astrojs/starlight/translations/it.json
+2024-06-11T09:30:13.914Z vite:import-analysis [skipped] node_modules/@astrojs/starlight/translations/it.json
+2024-06-11T09:30:13.914Z vite:transform 0.17ms /node_modules/@astrojs/starlight/translations/it.json
+2024-06-11T09:30:13.914Z vite:load 42.53ms [fs] /node_modules/@astrojs/starlight/translations/nl.json
+2024-06-11T09:30:13.914Z vite:import-analysis [skipped] node_modules/@astrojs/starlight/translations/nl.json
+2024-06-11T09:30:13.914Z vite:transform 0.17ms /node_modules/@astrojs/starlight/translations/nl.json
+2024-06-11T09:30:13.914Z vite:load 42.86ms [fs] /node_modules/@astrojs/starlight/translations/da.json
+2024-06-11T09:30:13.914Z vite:import-analysis [skipped] node_modules/@astrojs/starlight/translations/da.json
+2024-06-11T09:30:13.914Z vite:transform 0.19ms /node_modules/@astrojs/starlight/translations/da.json
+2024-06-11T09:30:13.915Z vite:load 43.21ms [fs] /node_modules/@astrojs/starlight/translations/tr.json
+2024-06-11T09:30:13.915Z vite:import-analysis [skipped] node_modules/@astrojs/starlight/translations/tr.json
+2024-06-11T09:30:13.915Z vite:transform 0.17ms /node_modules/@astrojs/starlight/translations/tr.json
+2024-06-11T09:30:13.915Z vite:load 43.55ms [fs] /node_modules/@astrojs/starlight/translations/ar.json
+2024-06-11T09:30:13.915Z vite:import-analysis [skipped] node_modules/@astrojs/starlight/translations/ar.json
+2024-06-11T09:30:13.915Z vite:transform 0.23ms /node_modules/@astrojs/starlight/translations/ar.json
+2024-06-11T09:30:13.915Z vite:load 43.96ms [fs] /node_modules/@astrojs/starlight/translations/nb.json
+2024-06-11T09:30:13.915Z vite:import-analysis [skipped] node_modules/@astrojs/starlight/translations/nb.json
+2024-06-11T09:30:13.916Z vite:transform 0.18ms /node_modules/@astrojs/starlight/translations/nb.json
+2024-06-11T09:30:13.916Z vite:load 44.30ms [fs] /node_modules/@astrojs/starlight/translations/zh-CN.json
+2024-06-11T09:30:13.916Z vite:import-analysis [skipped] node_modules/@astrojs/starlight/translations/zh-CN.json
+2024-06-11T09:30:13.916Z vite:transform 0.18ms /node_modules/@astrojs/starlight/translations/zh-CN.json
+2024-06-11T09:30:13.916Z vite:load 44.66ms [fs] /node_modules/@astrojs/starlight/translations/ko.json
+2024-06-11T09:30:13.916Z vite:import-analysis [skipped] node_modules/@astrojs/starlight/translations/ko.json
+2024-06-11T09:30:13.916Z vite:transform 0.17ms /node_modules/@astrojs/starlight/translations/ko.json
+2024-06-11T09:30:13.916Z vite:load 45.00ms [fs] /node_modules/@astrojs/starlight/translations/sv.json
+2024-06-11T09:30:13.917Z vite:import-analysis [skipped] node_modules/@astrojs/starlight/translations/sv.json
+2024-06-11T09:30:13.917Z vite:transform 0.16ms /node_modules/@astrojs/starlight/translations/sv.json
+2024-06-11T09:30:13.917Z vite:load 45.33ms [fs] /node_modules/@astrojs/starlight/translations/ro.json
+2024-06-11T09:30:13.917Z vite:import-analysis [skipped] node_modules/@astrojs/starlight/translations/ro.json
+2024-06-11T09:30:13.917Z vite:transform 0.18ms /node_modules/@astrojs/starlight/translations/ro.json
+2024-06-11T09:30:13.917Z vite:load 45.68ms [fs] /node_modules/@astrojs/starlight/translations/ru.json
+2024-06-11T09:30:13.917Z vite:import-analysis [skipped] node_modules/@astrojs/starlight/translations/ru.json
+2024-06-11T09:30:13.917Z vite:transform 0.19ms /node_modules/@astrojs/starlight/translations/ru.json
+2024-06-11T09:30:13.917Z vite:load 46.06ms [fs] /node_modules/@astrojs/starlight/translations/vi.json
+2024-06-11T09:30:13.918Z vite:import-analysis [skipped] node_modules/@astrojs/starlight/translations/vi.json
+2024-06-11T09:30:13.918Z vite:transform 0.17ms /node_modules/@astrojs/starlight/translations/vi.json
+2024-06-11T09:30:13.918Z vite:load 46.41ms [fs] /node_modules/@astrojs/starlight/translations/uk.json
+2024-06-11T09:30:13.918Z vite:import-analysis [skipped] node_modules/@astrojs/starlight/translations/uk.json
+2024-06-11T09:30:13.918Z vite:transform 0.17ms /node_modules/@astrojs/starlight/translations/uk.json
+2024-06-11T09:30:13.918Z vite:load 46.76ms [fs] /node_modules/@astrojs/starlight/translations/hi.json
+2024-06-11T09:30:13.918Z vite:import-analysis [skipped] node_modules/@astrojs/starlight/translations/hi.json
+2024-06-11T09:30:13.918Z vite:transform 0.25ms /node_modules/@astrojs/starlight/translations/hi.json
+2024-06-11T09:30:13.919Z vite:load 47.20ms [fs] /node_modules/@astrojs/starlight/translations/zh-TW.json
+2024-06-11T09:30:13.919Z vite:import-analysis [skipped] node_modules/@astrojs/starlight/translations/zh-TW.json
+2024-06-11T09:30:13.919Z vite:transform 0.36ms /node_modules/@astrojs/starlight/translations/zh-TW.json
+2024-06-11T09:30:13.919Z vite:load 47.73ms [fs] /node_modules/@astrojs/starlight/translations/pl.json
+2024-06-11T09:30:13.919Z vite:import-analysis [skipped] node_modules/@astrojs/starlight/translations/pl.json
+2024-06-11T09:30:13.919Z vite:transform 0.17ms /node_modules/@astrojs/starlight/translations/pl.json
+2024-06-11T09:30:13.920Z vite:import-analysis 0.39ms [0 imports rewritten] node_modules/@astrojs/starlight/schemas/favicon.ts
+2024-06-11T09:30:13.920Z vite:import-analysis 0.45ms [0 imports rewritten] node_modules/@astrojs/starlight/schemas/expressiveCode.ts
+2024-06-11T09:30:13.921Z vite:import-analysis 0.48ms [0 imports rewritten] node_modules/@astrojs/starlight/schemas/components.ts
+2024-06-11T09:30:13.921Z vite:import-analysis 0.51ms [0 imports rewritten] node_modules/@astrojs/starlight/schemas/site-title.ts
+2024-06-11T09:30:13.921Z vite:import-analysis 0.54ms [0 imports rewritten] node_modules/@astrojs/starlight/schemas/head.ts
+2024-06-11T09:30:13.921Z vite:import-analysis 0.56ms [0 imports rewritten] node_modules/@astrojs/starlight/schemas/logo.ts
+2024-06-11T09:30:13.921Z vite:import-analysis 0.58ms [0 imports rewritten] node_modules/@astrojs/starlight/schemas/i18n.ts
+2024-06-11T09:30:13.921Z vite:transform 15.52ms /node_modules/@astrojs/starlight/schemas/favicon.ts
+2024-06-11T09:30:13.921Z vite:transform 15.80ms /node_modules/@astrojs/starlight/schemas/expressiveCode.ts
+2024-06-11T09:30:13.921Z vite:transform 16.81ms /node_modules/@astrojs/starlight/schemas/components.ts
+2024-06-11T09:30:13.921Z vite:transform 14.33ms /node_modules/@astrojs/starlight/schemas/site-title.ts
+2024-06-11T09:30:13.921Z vite:transform 15.36ms /node_modules/@astrojs/starlight/schemas/head.ts
+2024-06-11T09:30:13.921Z vite:transform 15.10ms /node_modules/@astrojs/starlight/schemas/logo.ts
+2024-06-11T09:30:13.921Z vite:transform 12.88ms /node_modules/@astrojs/starlight/schemas/i18n.ts
+2024-06-11T09:30:13.921Z vite:resolve 1.09ms ./badge -> /project/workspace/node_modules/@astrojs/starlight/schemas/badge.ts
+2024-06-11T09:30:13.921Z vite:resolve 1.12ms ../utils/path -> /project/workspace/node_modules/@astrojs/starlight/utils/path.ts
+2024-06-11T09:30:13.922Z vite:resolve 0.17ms /node_modules/@astrojs/starlight/schemas/badge.ts -> /project/workspace/node_modules/@astrojs/starlight/schemas/badge.ts
+2024-06-11T09:30:13.923Z vite:resolve 0.20ms /node_modules/@astrojs/starlight/utils/path.ts -> /project/workspace/node_modules/@astrojs/starlight/utils/path.ts
+2024-06-11T09:30:13.923Z vite:import-analysis 2.63ms [2 imports rewritten] node_modules/@astrojs/starlight/schemas/sidebar.ts
+2024-06-11T09:30:13.923Z vite:transform 16.66ms /node_modules/@astrojs/starlight/schemas/sidebar.ts
+2024-06-11T09:30:13.923Z vite:import-analysis 0.07ms [0 imports rewritten] node_modules/@astrojs/starlight/schemas/tableOfContents.ts
+2024-06-11T09:30:13.923Z vite:import-analysis 0.12ms [0 imports rewritten] node_modules/@astrojs/starlight/schemas/social.ts
+2024-06-11T09:30:13.923Z vite:transform 17.04ms /node_modules/@astrojs/starlight/schemas/tableOfContents.ts
+2024-06-11T09:30:13.924Z vite:transform 17.25ms /node_modules/@astrojs/starlight/schemas/social.ts
+2024-06-11T09:30:13.958Z vite:load 34.93ms [fs] /node_modules/@astrojs/starlight/schemas/badge.ts
+2024-06-11T09:30:13.958Z vite:load 35.29ms [fs] /node_modules/@astrojs/starlight/utils/path.ts
+2024-06-11T09:30:13.966Z vite:import-analysis 0.08ms [no imports] node_modules/@astrojs/starlight/utils/path.ts
+2024-06-11T09:30:13.966Z vite:import-analysis 0.17ms [0 imports rewritten] node_modules/@astrojs/starlight/schemas/badge.ts
+2024-06-11T09:30:13.966Z vite:transform 7.71ms /node_modules/@astrojs/starlight/utils/path.ts
+2024-06-11T09:30:13.966Z vite:transform 8.29ms /node_modules/@astrojs/starlight/schemas/badge.ts
+2024-06-11T09:30:14.293Z astro:telemetry {
+  context: {
+    isGit: true,
+    anonymousProjectId: 'f222e69e5bb39ccf7f1d1e31b7db93c5140e83b23c6ea883401d203e53c3d29e',
+    packageManager: 'npm',
+    packageManagerVersion: '10.5.0',
+    anonymousId: 'b87e4fe703e7e51233fb4ca3ef627aebc3027aaa35e690a5d70bcc1483a833bc',
+    anonymousSessionId: 'a9595d2524f8117e7cadf7ab6f4ab0fa13bad8bddf1a2c8bdbd28bbd67e24180'
+  },
+  meta: {
+    nodeVersion: '20.12.1',
+    viteVersion: '5.2.13',
+    astroVersion: '4.10.1',
+    systemPlatform: 'linux',
+    systemRelease: '6.1.43',
+    systemArchitecture: 'x64',
+    cpuCount: 2,
+    cpuModel: 'AMD EPYC',
+    cpuSpeed: 0,
+    memoryInMb: 4101,
+    isDocker: true,
+    isTTY: undefined,
+    isWSL: false,
+    isCI: false,
+    ciName: null
+  }
+}
+2024-06-11T09:30:14.293Z astro:telemetry [
+  {
+    "eventName": "ASTRO_CLI_SESSION_STARTED",
+    "payload": {
+      "cliCommand": "build",
+      "config": {
+        "output": "hybrid",
+        "adapter": "@astrojs/node",
+        "integrations": [
+          "@astrojs/starlight",
+          "@astrojs/tailwind"
+        ],
+        "build": {},
+        "server": true,
+        "image": {},
+        "markdown": {},
+        "experimental": {},
+        "legacy": {}
+      }
+    }
+  }
+]
+2024-06-11T09:30:14.308Z astro:build Initial setup...
+09:30:14 [types] Added src/env.d.ts type declarations.
+2024-06-11T09:30:14.486Z vite:config using resolved config: {
+  configFile: undefined,
+  cacheDir: '/project/workspace/node_modules/.vite',
+  clearScreen: false,
+  customLogger: {
+    hasWarned: false,
+    info: [Function: info],
+    warn: [Function: warn],
+    warnOnce: [Function: warnOnce],
+    error: [Function: error],
+    clearScreen: [Function: clearScreen],
+    hasErrorLogged: [Function: hasErrorLogged]
+  },
+  appType: 'custom',
+  optimizeDeps: {
+    holdUntilCrawlEnd: true,
+    entries: [
+      '/project/workspace/src/!(pages)/**/*',
+      '/project/workspace/src/pages/**/!(*.js|*.mjs|*.ts|*.mts)',
+      '/project/workspace/src/pages/**/_*.{js,mjs,ts,mts}',
+      '/project/workspace/src/pages/**/_*/**/*.{js,mjs,ts,mts}',
+      '/project/workspace/src/!(pages)/**/*',
+      '/project/workspace/src/pages/**/!(*.js|*.mjs|*.ts|*.mts)',
+      '/project/workspace/src/pages/**/_*.{js,mjs,ts,mts}',
+      '/project/workspace/src/pages/**/_*/**/*.{js,mjs,ts,mts}'
+    ],
+    exclude: [ 'astro', 'node-fetch', 'astro', 'node-fetch' ],
+    noDiscovery: true,
+    include: [
+      'astro > cssesc',
+      'astro > aria-query',
+      'astro > axobject-query'
+    ],
+    esbuildOptions: { preserveSymlinks: false }
+  },
+  plugins: [
+    'vite:optimized-deps',
+    'vite:watch-package-data',
+    'vite:pre-alias',
+    'alias',
+    'astro:build',
+    'astro:markdown',
+    'astro:head-metadata',
+    'astro-content-virtual-mod-plugin',
+    'astro:content-asset-propagation',
+    'astro:assets:esm',
+    'astro:i18n',
+    '@mdx-js/rollup',
+    'vite:modulepreload-polyfill',
+    'vite:resolve',
+    'vite:html-inline-proxy',
+    'vite:css',
+    'vite:esbuild',
+    'vite:json',
+    'vite:wasm-helper',
+    'vite:worker',
+    'vite:asset',
+    'astro:build:normal',
+    'astro:scripts',
+    'astro:html',
+    'astro:postprocess',
+    'astro:integration-container',
+    'astro:content-imports',
+    '@astro/plugin-middleware',
+    'astro:assets',
+    'astro:prefetch',
+    'astro:transitions',
+    'astro:dev-toolbar',
+    'astro:vite-plugin-file-url',
+    'vite-plugin-starlight-user-config',
+    'vite-plugin-astro-expressive-code',
+    '@astrojs/mdx-postprocess',
+    'vite:wasm-fallback',
+    'astro:vite-plugin-env',
+    'vite:define',
+    'vite:css-post',
+    'vite:worker-import-meta-url',
+    'vite:asset-import-meta-url',
+    'vite:dynamic-import-vars',
+    'vite:import-glob',
+    'astro:scripts:page-ssr',
+    'astro:scanner',
+    'astro-inject-env-ts',
+    '@astrojs/vite-plugin-astro-ssr-manifest',
+    'vite:client-inject',
+    'vite:css-analysis',
+    'vite:import-analysis'
+  ],
+  publicDir: '/project/workspace/public',
+  root: '/project/workspace',
+  envPrefix: 'PUBLIC_',
+  define: {
+    'import.meta.env.SITE': 'undefined',
+    'import.meta.env.BASE_URL': '"/"',
+    'import.meta.env.ASSETS_PREFIX': 'undefined',
+    __ASTRO_INTERNAL_I18N_CONFIG__: '{"base":"/","format":"directory","trailingSlash":"ignore","isBuild":false}'
+  },
+  server: {
+    preTransformRequests: true,
+    hmr: false,
+    proxy: {},
+    watch: { ignored: [Array] },
+    middlewareMode: true,
+    sourcemapIgnoreList: [Function: isInNodeModules$1],
+    fs: {
+      strict: true,
+      allow: [Array],
+      deny: [Array],
+      cachedChecks: undefined
+    }
+  },
+  resolve: {
+    mainFields: [ 'browser', 'module', 'jsnext:main', 'jsnext' ],
+    conditions: [ 'astro', 'astro' ],
+    extensions: [
+      '.mjs',  '.js',
+      '.mts',  '.ts',
+      '.jsx',  '.tsx',
+      '.json'
+    ],
+    dedupe: [ 'astro', 'astro' ],
+    preserveSymlinks: false,
+    alias: [
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object]
+    ]
+  },
+  ssr: {
+    target: 'node',
+    noExternal: [
+      'astro',                 'astro/components',
+      '@nanostores/preact',    '@fontsource/*',
+      '@astrojs/node',         '@astrojs/starlight',
+      '@astrojs/tailwind',     '@astrojs/mdx',
+      '@astrojs/sitemap',      'astro-expressive-code',
+      '@astrojs/node',         'astro',
+      'astro/components',      '@nanostores/preact',
+      '@fontsource/*',         '@astrojs/node',
+      '@astrojs/starlight',    '@astrojs/tailwind',
+      '@astrojs/mdx',          '@astrojs/sitemap',
+      'astro-expressive-code', '@astrojs/node'
+    ],
+    external: [],
+    optimizeDeps: { noDiscovery: true, esbuildOptions: [Object] }
+  },
+  build: {
+    target: [ 'es2020', 'edge88', 'firefox78', 'chrome87', 'safari14' ],
+    cssTarget: [ 'es2020', 'edge88', 'firefox78', 'chrome87', 'safari14' ],
+    outDir: 'dist',
+    assetsDir: '_astro',
+    assetsInlineLimit: 4096,
+    cssCodeSplit: true,
+    sourcemap: false,
+    rollupOptions: {},
+    minify: 'esbuild',
+    terserOptions: {},
+    write: true,
+    emptyOutDir: null,
+    copyPublicDir: true,
+    manifest: false,
+    lib: false,
+    ssr: false,
+    ssrManifest: false,
+    ssrEmitAssets: false,
+    reportCompressedSize: true,
+    chunkSizeWarningLimit: 500,
+    watch: null,
+    commonjsOptions: { include: [Array], extensions: [Array] },
+    dynamicImportVarsOptions: { warnOnError: true, exclude: [Array] },
+    modulePreload: { polyfill: true },
+    cssMinify: true
+  },
+  css: { postcss: { plugins: [Array] }, lightningcss: undefined },
+  logLevel: 'silent',
+  configFileDependencies: [],
+  inlineConfig: {
+    configFile: false,
+    cacheDir: '/project/workspace/node_modules/.vite/',
+    clearScreen: false,
+    customLogger: {
+      hasWarned: false,
+      info: [Function: info],
+      warn: [Function: warn],
+      warnOnce: [Function: warnOnce],
+      error: [Function: error],
+      clearScreen: [Function: clearScreen],
+      hasErrorLogged: [Function: hasErrorLogged]
+    },
+    appType: 'custom',
+    optimizeDeps: { entries: [Array], exclude: [Array], noDiscovery: true },
+    plugins: [
+      null,      false,    [Array],
+      [Object],  false,    [Object],
+      undefined, [Object], [Object],
+      [Object],  [Object], [Object],
+      [Object],  [Object], [Object],
+      [Object],  [Object], [Array],
+      [Object],  [Object], [Object],
+      [Array],   [Object], [Object],
+      [Object],  [Object], [Object],
+      [Object],  [Object], [Object],
+      [Object]
+    ],
+    publicDir: '/project/workspace/public/',
+    root: '/project/workspace/',
+    envPrefix: 'PUBLIC_',
+    define: {
+      'import.meta.env.SITE': 'undefined',
+      'import.meta.env.BASE_URL': '"/"',
+      'import.meta.env.ASSETS_PREFIX': 'undefined'
+    },
+    server: { hmr: false, proxy: {}, watch: [Object], middlewareMode: true },
+    resolve: { alias: [Array], conditions: [Array], dedupe: [Array] },
+    ssr: { noExternal: [Array], external: [] },
+    build: { assetsDir: '_astro' },
+    css: { postcss: [Object] },
+    logLevel: 'silent'
+  },
+  base: '/',
+  rawBase: '/',
+  command: 'serve',
+  mode: 'development',
+  isWorker: false,
+  mainConfig: null,
+  bundleChain: [],
+  isProduction: true,
+  esbuild: { jsxDev: false },
+  preview: {
+    port: undefined,
+    strictPort: undefined,
+    host: undefined,
+    https: undefined,
+    open: undefined,
+    proxy: {},
+    cors: undefined,
+    headers: undefined
+  },
+  envDir: '/project/workspace',
+  env: { BASE_URL: '/', MODE: 'development', DEV: false, PROD: true },
+  assetsInclude: [Function: assetsInclude],
+  logger: {
+    hasWarned: false,
+    info: [Function: info],
+    warn: [Function: warn],
+    warnOnce: [Function: warnOnce],
+    error: [Function: error],
+    clearScreen: [Function: clearScreen],
+    hasErrorLogged: [Function: hasErrorLogged]
+  },
+  packageCache: Map(1) {
+    'fnpd_/project/workspace' => {
+      dir: '/project/workspace',
+      data: [Object],
+      hasSideEffects: [Function: hasSideEffects],
+      webResolvedImports: {},
+      nodeResolvedImports: {},
+      setResolvedCache: [Function: setResolvedCache],
+      getResolvedCache: [Function: getResolvedCache]
+    },
+    set: [Function (anonymous)]
+  },
+  createResolver: [Function: createResolver],
+  worker: { format: 'iife', plugins: '() => plugins', rollupOptions: {} },
+  experimental: { importGlobRestoreExtension: false, hmrPartialAccept: false },
+  getSortedPlugins: [Function: getSortedPlugins],
+  getSortedPluginHooks: [Function: getSortedPluginHooks]
+}
+2024-06-11T09:30:14.492Z vite:resolve 1.34ms @astrojs/starlight/404.astro -> /project/workspace/node_modules/@astrojs/starlight/404.astro
+2024-06-11T09:30:14.493Z vite:resolve 1.40ms @astrojs/starlight/index.astro -> /project/workspace/node_modules/@astrojs/starlight/index.astro
+2024-06-11T09:30:14.493Z vite:resolve 1.44ms astro/assets/endpoint/node -> /project/workspace/node_modules/astro/dist/assets/endpoint/node.js
+2024-06-11T09:30:14.497Z vite:deps Hash is consistent. Skipping. Use --force to override.
+2024-06-11T09:30:14.504Z vite:load 1.19ms [fs] src/content/config.ts
+2024-06-11T09:30:14.512Z vite:resolve 0.06ms astro:content ->  astro:content
+2024-06-11T09:30:14.512Z vite:resolve 0.53ms @astrojs/starlight/schema -> /project/workspace/node_modules/@astrojs/starlight/schema.ts
+2024-06-11T09:30:14.513Z vite:resolve 0.38ms /node_modules/@astrojs/starlight/schema.ts -> /project/workspace/node_modules/@astrojs/starlight/schema.ts
+2024-06-11T09:30:14.513Z vite:resolve 0.94ms  astro:content -> null
+2024-06-11T09:30:14.514Z vite:import-analysis 3.99ms [2 imports rewritten] src/content/config.ts
+2024-06-11T09:30:14.514Z vite:transform 9.18ms src/content/config.ts
+2024-06-11T09:30:14.521Z vite:load 8.01ms [fs] /node_modules/@astrojs/starlight/schema.ts
+2024-06-11T09:30:14.527Z vite:load 12.83ms [plugin]  astro:content
+2024-06-11T09:30:14.545Z vite:resolve 0.55ms astro/zod -> /project/workspace/node_modules/astro/zod.mjs
+2024-06-11T09:30:14.545Z vite:resolve 0.63ms ./schemas/head -> /project/workspace/node_modules/@astrojs/starlight/schemas/head.ts
+2024-06-11T09:30:14.545Z vite:resolve 0.65ms ./schemas/prevNextLink -> /project/workspace/node_modules/@astrojs/starlight/schemas/prevNextLink.ts
+2024-06-11T09:30:14.545Z vite:resolve 0.68ms ./schemas/tableOfContents -> /project/workspace/node_modules/@astrojs/starlight/schemas/tableOfContents.ts
+2024-06-11T09:30:14.545Z vite:resolve 0.70ms ./schemas/badge -> /project/workspace/node_modules/@astrojs/starlight/schemas/badge.ts
+2024-06-11T09:30:14.545Z vite:resolve 0.72ms ./schemas/hero -> /project/workspace/node_modules/@astrojs/starlight/schemas/hero.ts
+2024-06-11T09:30:14.545Z vite:resolve 0.74ms ./schemas/sidebar -> /project/workspace/node_modules/@astrojs/starlight/schemas/sidebar.ts
+2024-06-11T09:30:14.545Z vite:resolve 0.76ms ./schemas/i18n -> /project/workspace/node_modules/@astrojs/starlight/schemas/i18n.ts
+2024-06-11T09:30:14.546Z vite:resolve 0.63ms /node_modules/astro/zod.mjs -> /project/workspace/node_modules/astro/zod.mjs
+2024-06-11T09:30:14.546Z vite:resolve 0.68ms /node_modules/@astrojs/starlight/schemas/head.ts -> /project/workspace/node_modules/@astrojs/starlight/schemas/head.ts
+2024-06-11T09:30:14.546Z vite:resolve 0.71ms /node_modules/@astrojs/starlight/schemas/prevNextLink.ts -> /project/workspace/node_modules/@astrojs/starlight/schemas/prevNextLink.ts
+2024-06-11T09:30:14.547Z vite:resolve 0.75ms /node_modules/@astrojs/starlight/schemas/tableOfContents.ts -> /project/workspace/node_modules/@astrojs/starlight/schemas/tableOfContents.ts
+2024-06-11T09:30:14.547Z vite:resolve 0.77ms /node_modules/@astrojs/starlight/schemas/badge.ts -> /project/workspace/node_modules/@astrojs/starlight/schemas/badge.ts
+2024-06-11T09:30:14.547Z vite:resolve 0.80ms /node_modules/@astrojs/starlight/schemas/hero.ts -> /project/workspace/node_modules/@astrojs/starlight/schemas/hero.ts
+2024-06-11T09:30:14.547Z vite:resolve 0.82ms /node_modules/@astrojs/starlight/schemas/sidebar.ts -> /project/workspace/node_modules/@astrojs/starlight/schemas/sidebar.ts
+2024-06-11T09:30:14.547Z vite:resolve 0.83ms /node_modules/@astrojs/starlight/schemas/i18n.ts -> /project/workspace/node_modules/@astrojs/starlight/schemas/i18n.ts
+2024-06-11T09:30:14.547Z vite:import-analysis 2.68ms [8 imports rewritten] node_modules/@astrojs/starlight/schema.ts
+2024-06-11T09:30:14.547Z vite:transform 25.48ms /node_modules/@astrojs/starlight/schema.ts
+2024-06-11T09:30:14.553Z vite:resolve 0.76ms astro/content/runtime -> /project/workspace/node_modules/astro/dist/content/runtime.js
+2024-06-11T09:30:14.553Z vite:resolve 0.83ms /src/content/docs/guides/example.md?astroContentCollectionEntry=true -> /project/workspace/src/content/docs/guides/example.md?astroContentCollectionEntry=true
+2024-06-11T09:30:14.553Z vite:resolve 0.86ms /src/content/docs/index.mdx?astroContentCollectionEntry=true -> /project/workspace/src/content/docs/index.mdx?astroContentCollectionEntry=true
+2024-06-11T09:30:14.553Z vite:resolve 0.91ms /src/content/docs/reference/example.md?astroContentCollectionEntry=true -> /project/workspace/src/content/docs/reference/example.md?astroContentCollectionEntry=true
+2024-06-11T09:30:14.553Z vite:resolve 0.77ms /src/content/docs/guides/example.md?astroPropagatedAssets -> /project/workspace/src/content/docs/guides/example.md?astroPropagatedAssets
+2024-06-11T09:30:14.553Z vite:resolve 0.80ms /src/content/docs/index.mdx?astroPropagatedAssets -> /project/workspace/src/content/docs/index.mdx?astroPropagatedAssets
+2024-06-11T09:30:14.553Z vite:resolve 0.81ms /src/content/docs/reference/example.md?astroPropagatedAssets -> /project/workspace/src/content/docs/reference/example.md?astroPropagatedAssets
+2024-06-11T09:30:14.553Z vite:resolve 1.36ms /src/content/docs/guides/example.md?astroRenderContent=true -> /project/workspace/src/content/docs/guides/example.md?astroPropagatedAssets
+2024-06-11T09:30:14.553Z vite:resolve 1.40ms /src/content/docs/index.mdx?astroRenderContent=true -> /project/workspace/src/content/docs/index.mdx?astroPropagatedAssets
+2024-06-11T09:30:14.553Z vite:resolve 1.45ms /src/content/docs/reference/example.md?astroRenderContent=true -> /project/workspace/src/content/docs/reference/example.md?astroPropagatedAssets
+2024-06-11T09:30:14.554Z vite:resolve 0.30ms /node_modules/astro/dist/content/runtime.js -> /project/workspace/node_modules/astro/dist/content/runtime.js
+2024-06-11T09:30:14.554Z vite:import-analysis 2.61ms [8 imports rewritten]  astro:content
+2024-06-11T09:30:14.554Z vite:transform 27.28ms  astro:content
+2024-06-11T09:30:14.557Z vite:load 9.33ms [fs] /node_modules/astro/zod.mjs
+2024-06-11T09:30:14.558Z vite:import-analysis 0.62ms [0 imports rewritten] node_modules/astro/zod.mjs
+2024-06-11T09:30:14.558Z vite:transform 0.82ms /node_modules/astro/zod.mjs
+2024-06-11T09:30:14.558Z vite:load 10.33ms [fs] /node_modules/@astrojs/starlight/schemas/head.ts
+2024-06-11T09:30:14.558Z vite:load 10.69ms [fs] /node_modules/@astrojs/starlight/schemas/prevNextLink.ts
+2024-06-11T09:30:14.558Z vite:load 10.92ms [fs] /node_modules/@astrojs/starlight/schemas/tableOfContents.ts
+2024-06-11T09:30:14.559Z vite:load 11.11ms [fs] /node_modules/@astrojs/starlight/schemas/badge.ts
+2024-06-11T09:30:14.559Z vite:load 11.29ms [fs] /node_modules/@astrojs/starlight/schemas/hero.ts
+2024-06-11T09:30:14.559Z vite:load 11.51ms [fs] /node_modules/@astrojs/starlight/schemas/sidebar.ts
+2024-06-11T09:30:14.559Z vite:load 11.72ms [fs] /node_modules/@astrojs/starlight/schemas/i18n.ts
+2024-06-11T09:30:14.560Z vite:load 5.31ms [fs] /node_modules/astro/dist/content/runtime.js
+2024-06-11T09:30:14.568Z vite:resolve 0.17ms ../core/errors/index.js -> /project/workspace/node_modules/astro/dist/core/errors/index.js
+2024-06-11T09:30:14.568Z vite:resolve 0.26ms ../core/path.js -> /project/workspace/node_modules/astro/dist/core/path.js
+2024-06-11T09:30:14.568Z vite:resolve 0.29ms ../runtime/server/index.js -> /project/workspace/node_modules/astro/dist/runtime/server/index.js
+2024-06-11T09:30:14.569Z vite:resolve 0.26ms /node_modules/astro/dist/core/errors/index.js -> /project/workspace/node_modules/astro/dist/core/errors/index.js
+2024-06-11T09:30:14.569Z vite:resolve 0.31ms /node_modules/astro/dist/core/path.js -> /project/workspace/node_modules/astro/dist/core/path.js
+2024-06-11T09:30:14.569Z vite:resolve 0.34ms /node_modules/astro/dist/runtime/server/index.js -> /project/workspace/node_modules/astro/dist/runtime/server/index.js
+2024-06-11T09:30:14.569Z vite:import-analysis 2.20ms [3 imports rewritten] node_modules/astro/dist/content/runtime.js
+2024-06-11T09:30:14.569Z vite:transform 9.51ms /node_modules/astro/dist/content/runtime.js
+2024-06-11T09:30:14.573Z vite:resolve 0.33ms ../components/Icons -> /project/workspace/node_modules/@astrojs/starlight/components/Icons.ts
+2024-06-11T09:30:14.574Z vite:resolve 0.40ms ./badge -> /project/workspace/node_modules/@astrojs/starlight/schemas/badge.ts
+2024-06-11T09:30:14.574Z vite:resolve 0.42ms ../utils/path -> /project/workspace/node_modules/@astrojs/starlight/utils/path.ts
+2024-06-11T09:30:14.574Z vite:cache [memory] /node_modules/astro/zod.mjs
+2024-06-11T09:30:14.574Z vite:import-analysis 1.25ms [1 imports rewritten] node_modules/@astrojs/starlight/schemas/head.ts
+2024-06-11T09:30:14.574Z vite:import-analysis 1.29ms [1 imports rewritten] node_modules/@astrojs/starlight/schemas/i18n.ts
+2024-06-11T09:30:14.574Z vite:import-analysis 1.33ms [1 imports rewritten] node_modules/@astrojs/starlight/schemas/prevNextLink.ts
+2024-06-11T09:30:14.574Z vite:transform 16.31ms /node_modules/@astrojs/starlight/schemas/head.ts
+2024-06-11T09:30:14.574Z vite:transform 14.94ms /node_modules/@astrojs/starlight/schemas/i18n.ts
+2024-06-11T09:30:14.574Z vite:transform 16.02ms /node_modules/@astrojs/starlight/schemas/prevNextLink.ts
+2024-06-11T09:30:14.575Z vite:resolve 0.41ms /node_modules/@astrojs/starlight/components/Icons.ts -> /project/workspace/node_modules/@astrojs/starlight/components/Icons.ts
+2024-06-11T09:30:14.575Z vite:resolve 0.46ms /node_modules/@astrojs/starlight/utils/path.ts -> /project/workspace/node_modules/@astrojs/starlight/utils/path.ts
+2024-06-11T09:30:14.575Z vite:import-analysis 1.95ms [2 imports rewritten] node_modules/@astrojs/starlight/schemas/hero.ts
+2024-06-11T09:30:14.575Z vite:import-analysis 1.98ms [3 imports rewritten] node_modules/@astrojs/starlight/schemas/sidebar.ts
+2024-06-11T09:30:14.575Z vite:transform 15.95ms /node_modules/@astrojs/starlight/schemas/hero.ts
+2024-06-11T09:30:14.575Z vite:transform 15.76ms /node_modules/@astrojs/starlight/schemas/sidebar.ts
+2024-06-11T09:30:14.594Z vite:cache [memory] /node_modules/astro/zod.mjs
+2024-06-11T09:30:14.595Z vite:import-analysis 0.59ms [1 imports rewritten] node_modules/@astrojs/starlight/schemas/tableOfContents.ts
+2024-06-11T09:30:14.595Z vite:import-analysis 0.71ms [1 imports rewritten] node_modules/@astrojs/starlight/schemas/badge.ts
+2024-06-11T09:30:14.595Z vite:transform 36.33ms /node_modules/@astrojs/starlight/schemas/tableOfContents.ts
+2024-06-11T09:30:14.595Z vite:transform 36.22ms /node_modules/@astrojs/starlight/schemas/badge.ts
+2024-06-11T09:30:14.597Z vite:load 27.46ms [fs] /node_modules/astro/dist/core/errors/index.js
+2024-06-11T09:30:14.598Z vite:resolve 0.23ms ./errors-data.js -> /project/workspace/node_modules/astro/dist/core/errors/errors-data.js
+2024-06-11T09:30:14.598Z vite:resolve 0.31ms ./errors.js -> /project/workspace/node_modules/astro/dist/core/errors/errors.js
+2024-06-11T09:30:14.598Z vite:resolve 0.37ms ./printer.js -> /project/workspace/node_modules/astro/dist/core/errors/printer.js
+2024-06-11T09:30:14.598Z vite:resolve 0.45ms ./utils.js -> /project/workspace/node_modules/astro/dist/core/errors/utils.js
+2024-06-11T09:30:14.598Z vite:resolve 0.49ms ./zod-error-map.js -> /project/workspace/node_modules/astro/dist/core/errors/zod-error-map.js
+2024-06-11T09:30:14.599Z vite:resolve 0.37ms /node_modules/astro/dist/core/errors/errors-data.js -> /project/workspace/node_modules/astro/dist/core/errors/errors-data.js
+2024-06-11T09:30:14.599Z vite:resolve 0.42ms /node_modules/astro/dist/core/errors/errors.js -> /project/workspace/node_modules/astro/dist/core/errors/errors.js
+2024-06-11T09:30:14.599Z vite:resolve 0.44ms /node_modules/astro/dist/core/errors/printer.js -> /project/workspace/node_modules/astro/dist/core/errors/printer.js
+2024-06-11T09:30:14.599Z vite:resolve 0.47ms /node_modules/astro/dist/core/errors/utils.js -> /project/workspace/node_modules/astro/dist/core/errors/utils.js
+2024-06-11T09:30:14.599Z vite:resolve 0.49ms /node_modules/astro/dist/core/errors/zod-error-map.js -> /project/workspace/node_modules/astro/dist/core/errors/zod-error-map.js
+2024-06-11T09:30:14.599Z vite:import-analysis 1.68ms [5 imports rewritten] node_modules/astro/dist/core/errors/index.js
+2024-06-11T09:30:14.599Z vite:transform 1.89ms /node_modules/astro/dist/core/errors/index.js
+2024-06-11T09:30:14.601Z vite:load 31.57ms [fs] /node_modules/astro/dist/core/path.js
+2024-06-11T09:30:14.602Z vite:import-analysis 0.70ms [0 imports rewritten] node_modules/astro/dist/core/path.js
+2024-06-11T09:30:14.602Z vite:transform 0.94ms /node_modules/astro/dist/core/path.js
+2024-06-11T09:30:14.604Z vite:load 34.47ms [fs] /node_modules/astro/dist/runtime/server/index.js
+2024-06-11T09:30:14.605Z vite:resolve 0.41ms ./astro-component.js -> /project/workspace/node_modules/astro/dist/runtime/server/astro-component.js
+2024-06-11T09:30:14.605Z vite:resolve 0.51ms ./astro-global.js -> /project/workspace/node_modules/astro/dist/runtime/server/astro-global.js
+2024-06-11T09:30:14.605Z vite:resolve 0.59ms ./endpoint.js -> /project/workspace/node_modules/astro/dist/runtime/server/endpoint.js
+2024-06-11T09:30:14.605Z vite:resolve 0.67ms ./escape.js -> /project/workspace/node_modules/astro/dist/runtime/server/escape.js
+2024-06-11T09:30:14.605Z vite:resolve 0.74ms ./jsx.js -> /project/workspace/node_modules/astro/dist/runtime/server/jsx.js
+2024-06-11T09:30:14.605Z vite:resolve 0.81ms ./render/index.js -> /project/workspace/node_modules/astro/dist/runtime/server/render/index.js
+2024-06-11T09:30:14.606Z vite:resolve 0.88ms ./transition.js -> /project/workspace/node_modules/astro/dist/runtime/server/transition.js
+2024-06-11T09:30:14.607Z vite:resolve 0.56ms /node_modules/astro/dist/runtime/server/astro-component.js -> /project/workspace/node_modules/astro/dist/runtime/server/astro-component.js
+2024-06-11T09:30:14.607Z vite:resolve 0.68ms /node_modules/astro/dist/runtime/server/astro-global.js -> /project/workspace/node_modules/astro/dist/runtime/server/astro-global.js
+2024-06-11T09:30:14.607Z vite:resolve 0.78ms /node_modules/astro/dist/runtime/server/endpoint.js -> /project/workspace/node_modules/astro/dist/runtime/server/endpoint.js
+2024-06-11T09:30:14.607Z vite:resolve 0.86ms /node_modules/astro/dist/runtime/server/escape.js -> /project/workspace/node_modules/astro/dist/runtime/server/escape.js
+2024-06-11T09:30:14.607Z vite:resolve 1.24ms /node_modules/astro/dist/runtime/server/jsx.js -> /project/workspace/node_modules/astro/dist/runtime/server/jsx.js
+2024-06-11T09:30:14.607Z vite:resolve 1.35ms /node_modules/astro/dist/runtime/server/render/index.js -> /project/workspace/node_modules/astro/dist/runtime/server/render/index.js
+2024-06-11T09:30:14.607Z vite:resolve 1.42ms /node_modules/astro/dist/runtime/server/transition.js -> /project/workspace/node_modules/astro/dist/runtime/server/transition.js
+2024-06-11T09:30:14.608Z vite:import-analysis 3.46ms [7 imports rewritten] node_modules/astro/dist/runtime/server/index.js
+2024-06-11T09:30:14.608Z vite:transform 3.75ms /node_modules/astro/dist/runtime/server/index.js
+2024-06-11T09:30:14.609Z vite:load 34.14ms [fs] /node_modules/@astrojs/starlight/components/Icons.ts
+2024-06-11T09:30:14.610Z vite:load 34.67ms [fs] /node_modules/@astrojs/starlight/utils/path.ts
+2024-06-11T09:30:14.614Z vite:load 14.64ms [fs] /node_modules/astro/dist/core/errors/errors-data.js
+2024-06-11T09:30:14.633Z vite:import-analysis 0.30ms [no imports] node_modules/astro/dist/core/errors/errors-data.js
+2024-06-11T09:30:14.633Z vite:transform 18.48ms /node_modules/astro/dist/core/errors/errors-data.js
+2024-06-11T09:30:14.634Z vite:load 35.09ms [fs] /node_modules/astro/dist/core/errors/errors.js
+2024-06-11T09:30:14.635Z vite:import-analysis 0.38ms [1 imports rewritten] node_modules/astro/dist/core/errors/errors.js
+2024-06-11T09:30:14.635Z vite:transform 0.69ms /node_modules/astro/dist/core/errors/errors.js
+2024-06-11T09:30:14.636Z vite:load 36.32ms [fs] /node_modules/astro/dist/core/errors/printer.js
+2024-06-11T09:30:14.636Z vite:import-analysis 0.22ms [1 imports rewritten] node_modules/astro/dist/core/errors/printer.js
+2024-06-11T09:30:14.636Z vite:transform 0.44ms /node_modules/astro/dist/core/errors/printer.js
+2024-06-11T09:30:14.637Z vite:load 37.20ms [fs] /node_modules/astro/dist/core/errors/utils.js
+2024-06-11T09:30:14.637Z vite:import-analysis 0.18ms [no imports] node_modules/astro/dist/core/errors/utils.js
+2024-06-11T09:30:14.637Z vite:transform 0.39ms /node_modules/astro/dist/core/errors/utils.js
+2024-06-11T09:30:14.637Z vite:load 38.05ms [fs] /node_modules/astro/dist/core/errors/zod-error-map.js
+2024-06-11T09:30:14.638Z vite:import-analysis 0.04ms [no imports] node_modules/astro/dist/core/errors/zod-error-map.js
+2024-06-11T09:30:14.638Z vite:transform 0.26ms /node_modules/astro/dist/core/errors/zod-error-map.js
+2024-06-11T09:30:14.638Z vite:load 29.40ms [fs] /node_modules/astro/dist/runtime/server/astro-component.js
+2024-06-11T09:30:14.639Z vite:resolve 0.08ms ../../core/errors/index.js -> /project/workspace/node_modules/astro/dist/core/errors/index.js
+2024-06-11T09:30:14.639Z vite:cache [memory] /node_modules/astro/dist/core/errors/index.js
+2024-06-11T09:30:14.639Z vite:import-analysis 0.51ms [1 imports rewritten] node_modules/astro/dist/runtime/server/astro-component.js
+2024-06-11T09:30:14.639Z vite:transform 0.70ms /node_modules/astro/dist/runtime/server/astro-component.js
+2024-06-11T09:30:14.639Z vite:load 30.49ms [fs] /node_modules/astro/dist/runtime/server/astro-global.js
+2024-06-11T09:30:14.640Z vite:resolve 0.16ms ../../core/constants.js -> /project/workspace/node_modules/astro/dist/core/constants.js
+2024-06-11T09:30:14.640Z vite:cache [memory] /node_modules/astro/dist/core/errors/index.js
+2024-06-11T09:30:14.640Z vite:resolve 0.09ms /node_modules/astro/dist/core/constants.js -> /project/workspace/node_modules/astro/dist/core/constants.js
+2024-06-11T09:30:14.640Z vite:import-analysis 0.86ms [2 imports rewritten] node_modules/astro/dist/runtime/server/astro-global.js
+2024-06-11T09:30:14.640Z vite:transform 1.07ms /node_modules/astro/dist/runtime/server/astro-global.js
+2024-06-11T09:30:14.641Z vite:load 32.19ms [fs] /node_modules/astro/dist/runtime/server/endpoint.js
+2024-06-11T09:30:14.642Z vite:resolve 0.18ms ../../core/errors/errors-data.js -> /project/workspace/node_modules/astro/dist/core/errors/errors-data.js
+2024-06-11T09:30:14.642Z vite:resolve 0.28ms ../../core/errors/errors.js -> /project/workspace/node_modules/astro/dist/core/errors/errors.js
+2024-06-11T09:30:14.643Z vite:import-analysis 1.40ms [3 imports rewritten] node_modules/astro/dist/runtime/server/endpoint.js
+2024-06-11T09:30:14.643Z vite:transform 1.62ms /node_modules/astro/dist/runtime/server/endpoint.js
+2024-06-11T09:30:14.643Z vite:load 34.28ms [fs] /node_modules/astro/dist/runtime/server/escape.js
+2024-06-11T09:30:14.644Z vite:resolve 0.12ms ./util.js -> /project/workspace/node_modules/astro/dist/runtime/server/util.js
+2024-06-11T09:30:14.644Z vite:resolve 0.09ms /node_modules/astro/dist/runtime/server/util.js -> /project/workspace/node_modules/astro/dist/runtime/server/util.js
+2024-06-11T09:30:14.645Z vite:import-analysis 1.25ms [1 imports rewritten] node_modules/astro/dist/runtime/server/escape.js
+2024-06-11T09:30:14.645Z vite:transform 1.46ms /node_modules/astro/dist/runtime/server/escape.js
+2024-06-11T09:30:14.645Z vite:load 36.47ms [fs] /node_modules/astro/dist/runtime/server/jsx.js
+2024-06-11T09:30:14.646Z vite:resolve 0.13ms ../../jsx-runtime/index.js -> /project/workspace/node_modules/astro/dist/jsx-runtime/index.js
+2024-06-11T09:30:14.646Z vite:resolve 0.23ms ./index.js -> /project/workspace/node_modules/astro/dist/runtime/server/index.js
+2024-06-11T09:30:14.646Z vite:resolve 0.30ms ./render/component.js -> /project/workspace/node_modules/astro/dist/runtime/server/render/component.js
+2024-06-11T09:30:14.646Z vite:cache [memory] /node_modules/astro/dist/runtime/server/index.js
+2024-06-11T09:30:14.647Z vite:resolve 0.15ms /node_modules/astro/dist/jsx-runtime/index.js -> /project/workspace/node_modules/astro/dist/jsx-runtime/index.js
+2024-06-11T09:30:14.647Z vite:resolve 0.25ms /node_modules/astro/dist/runtime/server/render/component.js -> /project/workspace/node_modules/astro/dist/runtime/server/render/component.js
+2024-06-11T09:30:14.647Z vite:import-analysis 1.29ms [3 imports rewritten] node_modules/astro/dist/runtime/server/jsx.js
+2024-06-11T09:30:14.647Z vite:transform 1.50ms /node_modules/astro/dist/runtime/server/jsx.js
+2024-06-11T09:30:14.648Z vite:load 38.96ms [fs] /node_modules/astro/dist/runtime/server/render/index.js
+2024-06-11T09:30:14.649Z vite:resolve 0.47ms ./astro/index.js -> /project/workspace/node_modules/astro/dist/runtime/server/render/astro/index.js
+2024-06-11T09:30:14.649Z vite:resolve 0.59ms ./common.js -> /project/workspace/node_modules/astro/dist/runtime/server/render/common.js
+2024-06-11T09:30:14.649Z vite:resolve 0.67ms ./component.js -> /project/workspace/node_modules/astro/dist/runtime/server/render/component.js
+2024-06-11T09:30:14.649Z vite:resolve 0.76ms ./script.js -> /project/workspace/node_modules/astro/dist/runtime/server/render/script.js
+2024-06-11T09:30:14.649Z vite:resolve 0.86ms ./dom.js -> /project/workspace/node_modules/astro/dist/runtime/server/render/dom.js
+2024-06-11T09:30:14.649Z vite:resolve 0.93ms ./head.js -> /project/workspace/node_modules/astro/dist/runtime/server/render/head.js
+2024-06-11T09:30:14.649Z vite:resolve 1.02ms ./page.js -> /project/workspace/node_modules/astro/dist/runtime/server/render/page.js
+2024-06-11T09:30:14.649Z vite:resolve 1.10ms ./slot.js -> /project/workspace/node_modules/astro/dist/runtime/server/render/slot.js
+2024-06-11T09:30:14.649Z vite:resolve 1.18ms ./tags.js -> /project/workspace/node_modules/astro/dist/runtime/server/render/tags.js
+2024-06-11T09:30:14.649Z vite:resolve 1.31ms ./util.js -> /project/workspace/node_modules/astro/dist/runtime/server/render/util.js
+2024-06-11T09:30:14.651Z vite:resolve 0.66ms /node_modules/astro/dist/runtime/server/render/astro/index.js -> /project/workspace/node_modules/astro/dist/runtime/server/render/astro/index.js
+2024-06-11T09:30:14.651Z vite:resolve 0.76ms /node_modules/astro/dist/runtime/server/render/common.js -> /project/workspace/node_modules/astro/dist/runtime/server/render/common.js
+2024-06-11T09:30:14.651Z vite:resolve 0.84ms /node_modules/astro/dist/runtime/server/render/script.js -> /project/workspace/node_modules/astro/dist/runtime/server/render/script.js
+2024-06-11T09:30:14.651Z vite:resolve 0.91ms /node_modules/astro/dist/runtime/server/render/dom.js -> /project/workspace/node_modules/astro/dist/runtime/server/render/dom.js
+2024-06-11T09:30:14.651Z vite:resolve 0.99ms /node_modules/astro/dist/runtime/server/render/head.js -> /project/workspace/node_modules/astro/dist/runtime/server/render/head.js
+2024-06-11T09:30:14.651Z vite:resolve 1.06ms /node_modules/astro/dist/runtime/server/render/page.js -> /project/workspace/node_modules/astro/dist/runtime/server/render/page.js
+2024-06-11T09:30:14.651Z vite:resolve 1.13ms /node_modules/astro/dist/runtime/server/render/slot.js -> /project/workspace/node_modules/astro/dist/runtime/server/render/slot.js
+2024-06-11T09:30:14.651Z vite:resolve 1.20ms /node_modules/astro/dist/runtime/server/render/tags.js -> /project/workspace/node_modules/astro/dist/runtime/server/render/tags.js
+2024-06-11T09:30:14.651Z vite:resolve 1.27ms /node_modules/astro/dist/runtime/server/render/util.js -> /project/workspace/node_modules/astro/dist/runtime/server/render/util.js
+2024-06-11T09:30:14.652Z vite:import-analysis 3.55ms [10 imports rewritten] node_modules/astro/dist/runtime/server/render/index.js
+2024-06-11T09:30:14.652Z vite:transform 3.82ms /node_modules/astro/dist/runtime/server/render/index.js
+2024-06-11T09:30:14.653Z vite:load 43.94ms [fs] /node_modules/astro/dist/runtime/server/transition.js
+2024-06-11T09:30:14.654Z vite:resolve 0.10ms ../../transitions/index.js -> /project/workspace/node_modules/astro/dist/transitions/index.js
+2024-06-11T09:30:14.654Z vite:resolve 0.11ms /node_modules/astro/dist/transitions/index.js -> /project/workspace/node_modules/astro/dist/transitions/index.js
+2024-06-11T09:30:14.654Z vite:import-analysis 1.43ms [2 imports rewritten] node_modules/astro/dist/runtime/server/transition.js
+2024-06-11T09:30:14.655Z vite:transform 1.67ms /node_modules/astro/dist/runtime/server/transition.js
+2024-06-11T09:30:14.679Z vite:import-analysis 0.04ms [no imports] node_modules/@astrojs/starlight/utils/path.ts
+2024-06-11T09:30:14.679Z vite:transform 69.21ms /node_modules/@astrojs/starlight/utils/path.ts
+2024-06-11T09:30:14.680Z vite:resolve 0.11ms ../user-components/file-tree-icons -> /project/workspace/node_modules/@astrojs/starlight/user-components/file-tree-icons.ts
+2024-06-11T09:30:14.681Z vite:resolve 0.09ms /node_modules/@astrojs/starlight/user-components/file-tree-icons.ts -> /project/workspace/node_modules/@astrojs/starlight/user-components/file-tree-icons.ts
+2024-06-11T09:30:14.681Z vite:import-analysis 0.90ms [1 imports rewritten] node_modules/@astrojs/starlight/components/Icons.ts
+2024-06-11T09:30:14.681Z vite:transform 71.47ms /node_modules/@astrojs/starlight/components/Icons.ts
+2024-06-11T09:30:14.691Z vite:load 50.40ms [fs] /node_modules/astro/dist/core/constants.js
+2024-06-11T09:30:14.692Z vite:import-analysis 0.04ms [no imports] node_modules/astro/dist/core/constants.js
+2024-06-11T09:30:14.692Z vite:transform 0.41ms /node_modules/astro/dist/core/constants.js
+2024-06-11T09:30:14.692Z vite:load 47.01ms [fs] /node_modules/astro/dist/runtime/server/util.js
+2024-06-11T09:30:14.692Z vite:import-analysis 0.02ms [no imports] node_modules/astro/dist/runtime/server/util.js
+2024-06-11T09:30:14.692Z vite:transform 0.22ms /node_modules/astro/dist/runtime/server/util.js
+2024-06-11T09:30:14.693Z vite:load 45.10ms [fs] /node_modules/astro/dist/jsx-runtime/index.js
+2024-06-11T09:30:14.693Z vite:cache [memory] /node_modules/astro/dist/runtime/server/index.js
+2024-06-11T09:30:14.693Z vite:import-analysis 0.48ms [1 imports rewritten] node_modules/astro/dist/jsx-runtime/index.js
+2024-06-11T09:30:14.694Z vite:transform 0.69ms /node_modules/astro/dist/jsx-runtime/index.js
+2024-06-11T09:30:14.694Z vite:load 46.28ms [fs] /node_modules/astro/dist/runtime/server/render/component.js
+2024-06-11T09:30:14.696Z vite:resolve 0.56ms ./instruction.js -> /project/workspace/node_modules/astro/dist/runtime/server/render/instruction.js
+2024-06-11T09:30:14.696Z vite:resolve 0.66ms ../../../core/errors/index.js -> /project/workspace/node_modules/astro/dist/core/errors/index.js
+2024-06-11T09:30:14.696Z vite:resolve 0.74ms ../escape.js -> /project/workspace/node_modules/astro/dist/runtime/server/escape.js
+2024-06-11T09:30:14.696Z vite:resolve 0.81ms ../hydration.js -> /project/workspace/node_modules/astro/dist/runtime/server/hydration.js
+2024-06-11T09:30:14.696Z vite:resolve 0.92ms ../serialize.js -> /project/workspace/node_modules/astro/dist/runtime/server/serialize.js
+2024-06-11T09:30:14.697Z vite:resolve 1.00ms ../shorthash.js -> /project/workspace/node_modules/astro/dist/runtime/server/shorthash.js
+2024-06-11T09:30:14.697Z vite:resolve 1.07ms ../util.js -> /project/workspace/node_modules/astro/dist/runtime/server/util.js
+2024-06-11T09:30:14.697Z vite:resolve 1.15ms ./astro/factory.js -> /project/workspace/node_modules/astro/dist/runtime/server/render/astro/factory.js
+2024-06-11T09:30:14.697Z vite:resolve 1.22ms ./astro/instance.js -> /project/workspace/node_modules/astro/dist/runtime/server/render/astro/instance.js
+2024-06-11T09:30:14.697Z vite:cache [memory] /node_modules/astro/dist/core/errors/index.js
+2024-06-11T09:30:14.697Z vite:cache [memory] /node_modules/astro/dist/runtime/server/escape.js
+2024-06-11T09:30:14.698Z vite:resolve 0.43ms /node_modules/astro/dist/runtime/server/render/instruction.js -> /project/workspace/node_modules/astro/dist/runtime/server/render/instruction.js
+2024-06-11T09:30:14.698Z vite:resolve 0.53ms /node_modules/astro/dist/runtime/server/hydration.js -> /project/workspace/node_modules/astro/dist/runtime/server/hydration.js
+2024-06-11T09:30:14.698Z vite:resolve 0.61ms /node_modules/astro/dist/runtime/server/serialize.js -> /project/workspace/node_modules/astro/dist/runtime/server/serialize.js
+2024-06-11T09:30:14.698Z vite:resolve 0.69ms /node_modules/astro/dist/runtime/server/shorthash.js -> /project/workspace/node_modules/astro/dist/runtime/server/shorthash.js
+2024-06-11T09:30:14.698Z vite:resolve 0.77ms /node_modules/astro/dist/runtime/server/render/astro/factory.js -> /project/workspace/node_modules/astro/dist/runtime/server/render/astro/factory.js
+2024-06-11T09:30:14.698Z vite:resolve 0.84ms /node_modules/astro/dist/runtime/server/render/astro/instance.js -> /project/workspace/node_modules/astro/dist/runtime/server/render/astro/instance.js
+2024-06-11T09:30:14.699Z vite:import-analysis 4.30ms [15 imports rewritten] node_modules/astro/dist/runtime/server/render/component.js
+2024-06-11T09:30:14.699Z vite:transform 4.75ms /node_modules/astro/dist/runtime/server/render/component.js
+2024-06-11T09:30:14.704Z vite:load 52.07ms [fs] /node_modules/astro/dist/runtime/server/render/astro/index.js
+2024-06-11T09:30:14.711Z vite:resolve 1.86ms ./factory.js -> /project/workspace/node_modules/astro/dist/runtime/server/render/astro/factory.js
+2024-06-11T09:30:14.712Z vite:resolve 2.57ms ./head-and-content.js -> /project/workspace/node_modules/astro/dist/runtime/server/render/astro/head-and-content.js
+2024-06-11T09:30:14.712Z vite:resolve 2.51ms ./instance.js -> /project/workspace/node_modules/astro/dist/runtime/server/render/astro/instance.js
+2024-06-11T09:30:14.712Z vite:resolve 2.55ms ./render-template.js -> /project/workspace/node_modules/astro/dist/runtime/server/render/astro/render-template.js
+2024-06-11T09:30:14.712Z vite:resolve 2.58ms ./render.js -> /project/workspace/node_modules/astro/dist/runtime/server/render/astro/render.js
+2024-06-11T09:30:14.714Z vite:resolve 1.81ms /node_modules/astro/dist/runtime/server/render/astro/head-and-content.js -> /project/workspace/node_modules/astro/dist/runtime/server/render/astro/head-and-content.js
+2024-06-11T09:30:14.714Z vite:resolve 1.89ms /node_modules/astro/dist/runtime/server/render/astro/render-template.js -> /project/workspace/node_modules/astro/dist/runtime/server/render/astro/render-template.js
+2024-06-11T09:30:14.714Z vite:resolve 1.93ms /node_modules/astro/dist/runtime/server/render/astro/render.js -> /project/workspace/node_modules/astro/dist/runtime/server/render/astro/render.js
+2024-06-11T09:30:14.715Z vite:import-analysis 6.32ms [5 imports rewritten] node_modules/astro/dist/runtime/server/render/astro/index.js
+2024-06-11T09:30:14.715Z vite:transform 10.08ms /node_modules/astro/dist/runtime/server/render/astro/index.js
+2024-06-11T09:30:14.722Z vite:load 69.35ms [fs] /node_modules/astro/dist/runtime/server/render/common.js
+2024-06-11T09:30:14.723Z vite:resolve 0.24ms ../scripts.js -> /project/workspace/node_modules/astro/dist/runtime/server/scripts.js
+2024-06-11T09:30:14.723Z vite:cache [memory] /node_modules/astro/dist/runtime/server/escape.js
+2024-06-11T09:30:14.723Z vite:resolve 0.09ms /node_modules/astro/dist/runtime/server/scripts.js -> /project/workspace/node_modules/astro/dist/runtime/server/scripts.js
+2024-06-11T09:30:14.723Z vite:import-analysis 1.08ms [5 imports rewritten] node_modules/astro/dist/runtime/server/render/common.js
+2024-06-11T09:30:14.723Z vite:transform 1.37ms /node_modules/astro/dist/runtime/server/render/common.js
+2024-06-11T09:30:14.724Z vite:load 71.47ms [fs] /node_modules/astro/dist/runtime/server/render/script.js
+2024-06-11T09:30:14.724Z vite:cache [memory] /node_modules/astro/dist/runtime/server/escape.js
+2024-06-11T09:30:14.724Z vite:import-analysis 0.23ms [1 imports rewritten] node_modules/astro/dist/runtime/server/render/script.js
+2024-06-11T09:30:14.724Z vite:transform 0.35ms /node_modules/astro/dist/runtime/server/render/script.js
+2024-06-11T09:30:14.724Z vite:load 72.03ms [fs] /node_modules/astro/dist/runtime/server/render/dom.js
+2024-06-11T09:30:14.725Z vite:cache [memory] /node_modules/astro/dist/runtime/server/escape.js
+2024-06-11T09:30:14.725Z vite:import-analysis 0.48ms [3 imports rewritten] node_modules/astro/dist/runtime/server/render/dom.js
+2024-06-11T09:30:14.725Z vite:transform 0.60ms /node_modules/astro/dist/runtime/server/render/dom.js
+2024-06-11T09:30:14.725Z vite:load 72.87ms [fs] /node_modules/astro/dist/runtime/server/render/head.js
+2024-06-11T09:30:14.729Z vite:cache [memory] /node_modules/astro/dist/runtime/server/escape.js
+2024-06-11T09:30:14.729Z vite:import-analysis 3.50ms [3 imports rewritten] node_modules/astro/dist/runtime/server/render/head.js
+2024-06-11T09:30:14.729Z vite:transform 3.68ms /node_modules/astro/dist/runtime/server/render/head.js
+2024-06-11T09:30:14.730Z vite:load 77.43ms [fs] /node_modules/astro/dist/runtime/server/render/page.js
+2024-06-11T09:30:14.730Z vite:resolve 0.25ms ./astro/render.js -> /project/workspace/node_modules/astro/dist/runtime/server/render/astro/render.js
+2024-06-11T09:30:14.731Z vite:import-analysis 0.71ms [5 imports rewritten] node_modules/astro/dist/runtime/server/render/page.js
+2024-06-11T09:30:14.731Z vite:transform 0.99ms /node_modules/astro/dist/runtime/server/render/page.js
+2024-06-11T09:30:14.731Z vite:load 78.75ms [fs] /node_modules/astro/dist/runtime/server/render/slot.js
+2024-06-11T09:30:14.731Z vite:resolve 0.14ms ./any.js -> /project/workspace/node_modules/astro/dist/runtime/server/render/any.js
+2024-06-11T09:30:14.732Z vite:cache [memory] /node_modules/astro/dist/runtime/server/escape.js
+2024-06-11T09:30:14.732Z vite:resolve 0.09ms /node_modules/astro/dist/runtime/server/render/any.js -> /project/workspace/node_modules/astro/dist/runtime/server/render/any.js
+2024-06-11T09:30:14.732Z vite:import-analysis 0.74ms [3 imports rewritten] node_modules/astro/dist/runtime/server/render/slot.js
+2024-06-11T09:30:14.732Z vite:transform 0.88ms /node_modules/astro/dist/runtime/server/render/slot.js
+2024-06-11T09:30:14.732Z vite:load 80.16ms [fs] /node_modules/astro/dist/runtime/server/render/tags.js
+2024-06-11T09:30:14.733Z vite:import-analysis 0.22ms [1 imports rewritten] node_modules/astro/dist/runtime/server/render/tags.js
+2024-06-11T09:30:14.733Z vite:transform 0.37ms /node_modules/astro/dist/runtime/server/render/tags.js
+2024-06-11T09:30:14.733Z vite:load 80.75ms [fs] /node_modules/astro/dist/runtime/server/render/util.js
+2024-06-11T09:30:14.733Z vite:cache [memory] /node_modules/astro/dist/runtime/server/escape.js
+2024-06-11T09:30:14.734Z vite:import-analysis 0.31ms [1 imports rewritten] node_modules/astro/dist/runtime/server/render/util.js
+2024-06-11T09:30:14.734Z vite:transform 0.45ms /node_modules/astro/dist/runtime/server/render/util.js
+2024-06-11T09:30:14.734Z vite:load 78.80ms [fs] /node_modules/astro/dist/transitions/index.js
+2024-06-11T09:30:14.734Z vite:resolve 0.06ms ../runtime/server/transition.js -> /project/workspace/node_modules/astro/dist/runtime/server/transition.js
+2024-06-11T09:30:14.735Z vite:cache [memory] /node_modules/astro/dist/runtime/server/transition.js
+2024-06-11T09:30:14.735Z vite:import-analysis 0.30ms [1 imports rewritten] node_modules/astro/dist/transitions/index.js
+2024-06-11T09:30:14.735Z vite:transform 0.44ms /node_modules/astro/dist/transitions/index.js
+2024-06-11T09:30:14.754Z vite:load 72.06ms [fs] /node_modules/@astrojs/starlight/user-components/file-tree-icons.ts
+2024-06-11T09:30:14.758Z vite:load 56.98ms [fs] /node_modules/astro/dist/runtime/server/render/instruction.js
+2024-06-11T09:30:14.758Z vite:import-analysis 0.03ms [no imports] node_modules/astro/dist/runtime/server/render/instruction.js
+2024-06-11T09:30:14.758Z vite:transform 0.29ms /node_modules/astro/dist/runtime/server/render/instruction.js
+2024-06-11T09:30:14.758Z vite:load 57.74ms [fs] /node_modules/astro/dist/runtime/server/hydration.js
+2024-06-11T09:30:14.759Z vite:resolve 0.17ms ./serialize.js -> /project/workspace/node_modules/astro/dist/runtime/server/serialize.js
+2024-06-11T09:30:14.759Z vite:cache [memory] /node_modules/astro/dist/core/errors/index.js
+2024-06-11T09:30:14.759Z vite:cache [memory] /node_modules/astro/dist/runtime/server/escape.js
+2024-06-11T09:30:14.759Z vite:import-analysis 0.77ms [3 imports rewritten] node_modules/astro/dist/runtime/server/hydration.js
+2024-06-11T09:30:14.759Z vite:transform 0.97ms /node_modules/astro/dist/runtime/server/hydration.js
+2024-06-11T09:30:14.760Z vite:load 59.26ms [fs] /node_modules/astro/dist/runtime/server/serialize.js
+2024-06-11T09:30:14.760Z vite:import-analysis 0.04ms [no imports] node_modules/astro/dist/runtime/server/serialize.js
+2024-06-11T09:30:14.760Z vite:transform 0.23ms /node_modules/astro/dist/runtime/server/serialize.js
+2024-06-11T09:30:14.761Z vite:load 60.00ms [fs] /node_modules/astro/dist/runtime/server/shorthash.js
+2024-06-11T09:30:14.761Z vite:import-analysis 0.02ms [no imports] node_modules/astro/dist/runtime/server/shorthash.js
+2024-06-11T09:30:14.761Z vite:transform 0.35ms /node_modules/astro/dist/runtime/server/shorthash.js
+2024-06-11T09:30:14.761Z vite:load 60.73ms [fs] /node_modules/astro/dist/runtime/server/render/astro/factory.js
+2024-06-11T09:30:14.762Z vite:import-analysis 0.02ms [no imports] node_modules/astro/dist/runtime/server/render/astro/factory.js
+2024-06-11T09:30:14.762Z vite:transform 0.22ms /node_modules/astro/dist/runtime/server/render/astro/factory.js
+2024-06-11T09:30:14.762Z vite:load 61.23ms [fs] /node_modules/astro/dist/runtime/server/render/astro/instance.js
+2024-06-11T09:30:14.762Z vite:resolve 0.19ms ../../util.js -> /project/workspace/node_modules/astro/dist/runtime/server/util.js
+2024-06-11T09:30:14.762Z vite:resolve 0.29ms ../any.js -> /project/workspace/node_modules/astro/dist/runtime/server/render/any.js
+2024-06-11T09:30:14.763Z vite:cache [memory] /node_modules/astro/dist/runtime/server/util.js
+2024-06-11T09:30:14.763Z vite:import-analysis 0.79ms [4 imports rewritten] node_modules/astro/dist/runtime/server/render/astro/instance.js
+2024-06-11T09:30:14.763Z vite:transform 0.97ms /node_modules/astro/dist/runtime/server/render/astro/instance.js
+2024-06-11T09:30:14.763Z vite:load 48.30ms [fs] /node_modules/astro/dist/runtime/server/render/astro/head-and-content.js
+2024-06-11T09:30:14.763Z vite:import-analysis 0.02ms [no imports] node_modules/astro/dist/runtime/server/render/astro/head-and-content.js
+2024-06-11T09:30:14.764Z vite:transform 0.20ms /node_modules/astro/dist/runtime/server/render/astro/head-and-content.js
+2024-06-11T09:30:14.764Z vite:load 48.77ms [fs] /node_modules/astro/dist/runtime/server/render/astro/render-template.js
+2024-06-11T09:30:14.764Z vite:resolve 0.16ms ../../escape.js -> /project/workspace/node_modules/astro/dist/runtime/server/escape.js
+2024-06-11T09:30:14.764Z vite:resolve 0.26ms ../util.js -> /project/workspace/node_modules/astro/dist/runtime/server/render/util.js
+2024-06-11T09:30:14.765Z vite:cache [memory] /node_modules/astro/dist/runtime/server/escape.js
+2024-06-11T09:30:14.765Z vite:cache [memory] /node_modules/astro/dist/runtime/server/util.js
+2024-06-11T09:30:14.765Z vite:cache [memory] /node_modules/astro/dist/runtime/server/render/util.js
+2024-06-11T09:30:14.765Z vite:import-analysis 0.87ms [4 imports rewritten] node_modules/astro/dist/runtime/server/render/astro/render-template.js
+2024-06-11T09:30:14.765Z vite:transform 1.07ms /node_modules/astro/dist/runtime/server/render/astro/render-template.js
+2024-06-11T09:30:14.765Z vite:load 50.23ms [fs] /node_modules/astro/dist/runtime/server/render/astro/render.js
+2024-06-11T09:30:14.766Z vite:resolve 0.21ms ../../../../core/errors/index.js -> /project/workspace/node_modules/astro/dist/core/errors/index.js
+2024-06-11T09:30:14.766Z vite:resolve 0.32ms ../common.js -> /project/workspace/node_modules/astro/dist/runtime/server/render/common.js
+2024-06-11T09:30:14.767Z vite:cache [memory] /node_modules/astro/dist/core/errors/index.js
+2024-06-11T09:30:14.767Z vite:cache [memory] /node_modules/astro/dist/runtime/server/render/common.js
+2024-06-11T09:30:14.767Z vite:cache [memory] /node_modules/astro/dist/runtime/server/render/util.js
+2024-06-11T09:30:14.767Z vite:import-analysis 1.36ms [5 imports rewritten] node_modules/astro/dist/runtime/server/render/astro/render.js
+2024-06-11T09:30:14.767Z vite:transform 1.55ms /node_modules/astro/dist/runtime/server/render/astro/render.js
+2024-06-11T09:30:14.767Z vite:load 43.84ms [fs] /node_modules/astro/dist/runtime/server/scripts.js
+2024-06-11T09:30:14.768Z vite:resolve 0.10ms ./astro-island.prebuilt-dev.js -> /project/workspace/node_modules/astro/dist/runtime/server/astro-island.prebuilt-dev.js
+2024-06-11T09:30:14.768Z vite:resolve 0.20ms ./astro-island.prebuilt.js -> /project/workspace/node_modules/astro/dist/runtime/server/astro-island.prebuilt.js
+2024-06-11T09:30:14.768Z vite:resolve 0.15ms /node_modules/astro/dist/runtime/server/astro-island.prebuilt-dev.js -> /project/workspace/node_modules/astro/dist/runtime/server/astro-island.prebuilt-dev.js
+2024-06-11T09:30:14.768Z vite:resolve 0.25ms /node_modules/astro/dist/runtime/server/astro-island.prebuilt.js -> /project/workspace/node_modules/astro/dist/runtime/server/astro-island.prebuilt.js
+2024-06-11T09:30:14.769Z vite:import-analysis 0.96ms [2 imports rewritten] node_modules/astro/dist/runtime/server/scripts.js
+2024-06-11T09:30:14.769Z vite:transform 1.16ms /node_modules/astro/dist/runtime/server/scripts.js
+2024-06-11T09:30:14.769Z vite:load 36.93ms [fs] /node_modules/astro/dist/runtime/server/render/any.js
+2024-06-11T09:30:14.770Z vite:cache [memory] /node_modules/astro/dist/runtime/server/escape.js
+2024-06-11T09:30:14.770Z vite:cache [memory] /node_modules/astro/dist/runtime/server/util.js
+2024-06-11T09:30:14.770Z vite:cache [memory] /node_modules/astro/dist/runtime/server/render/astro/index.js
+2024-06-11T09:30:14.770Z vite:cache [memory] /node_modules/astro/dist/runtime/server/render/common.js
+2024-06-11T09:30:14.770Z vite:cache [memory] /node_modules/astro/dist/runtime/server/render/slot.js
+2024-06-11T09:30:14.770Z vite:cache [memory] /node_modules/astro/dist/runtime/server/render/util.js
+2024-06-11T09:30:14.771Z vite:import-analysis 1.00ms [6 imports rewritten] node_modules/astro/dist/runtime/server/render/any.js
+2024-06-11T09:30:14.771Z vite:transform 1.19ms /node_modules/astro/dist/runtime/server/render/any.js
+2024-06-11T09:30:14.787Z vite:import-analysis 1.64ms [no imports] node_modules/@astrojs/starlight/user-components/file-tree-icons.ts
+2024-06-11T09:30:14.788Z vite:transform 33.34ms /node_modules/@astrojs/starlight/user-components/file-tree-icons.ts
+2024-06-11T09:30:14.789Z vite:load 20.16ms [fs] /node_modules/astro/dist/runtime/server/astro-island.prebuilt-dev.js
+2024-06-11T09:30:14.790Z vite:import-analysis 0.03ms [no imports] node_modules/astro/dist/runtime/server/astro-island.prebuilt-dev.js
+2024-06-11T09:30:14.790Z vite:transform 0.21ms /node_modules/astro/dist/runtime/server/astro-island.prebuilt-dev.js
+2024-06-11T09:30:14.790Z vite:load 20.65ms [fs] /node_modules/astro/dist/runtime/server/astro-island.prebuilt.js
+2024-06-11T09:30:14.790Z vite:import-analysis 0.02ms [no imports] node_modules/astro/dist/runtime/server/astro-island.prebuilt.js
+2024-06-11T09:30:14.790Z vite:transform 0.16ms /node_modules/astro/dist/runtime/server/astro-island.prebuilt.js
+2024-06-11T09:30:14.903Z astro:content docs collection added
+09:30:14 [types] Added src/env.d.ts type declarations.
+09:30:14 [build] output: "hybrid"
+09:30:14 [build] directory: /project/workspace/dist/
+09:30:14 [build] adapter: @astrojs/node
+09:30:14 [build] Collecting build info...
+2024-06-11T09:30:14.927Z astro:build ├── ✔ node_modules/astro/dist/assets/endpoint/node.js
+2024-06-11T09:30:14.933Z astro:build ├── ✔ node_modules/@astrojs/starlight/404.astro
+2024-06-11T09:30:14.934Z astro:build All pages loaded   1718098212.8s
+09:30:14 [build] ✓ Completed in 626ms.
+09:30:14 [build] Building hybrid entrypoints...
+09:30:14 [types] Added src/env.d.ts type declarations.
+2024-06-11T09:30:14.987Z vite:config using resolved config: {
+  configFile: undefined,
+  cacheDir: '/project/workspace/node_modules/.vite',
+  clearScreen: false,
+  customLogger: {
+    hasWarned: false,
+    info: [Function: info],
+    warn: [Function: warn],
+    warnOnce: [Function: warnOnce],
+    error: [Function: error],
+    clearScreen: [Function: clearScreen],
+    hasErrorLogged: [Function: hasErrorLogged]
+  },
+  appType: 'custom',
+  optimizeDeps: {
+    holdUntilCrawlEnd: true,
+    entries: [
+      '/project/workspace/src/!(pages)/**/*',
+      '/project/workspace/src/pages/**/!(*.js|*.mjs|*.ts|*.mts)',
+      '/project/workspace/src/pages/**/_*.{js,mjs,ts,mts}',
+      '/project/workspace/src/pages/**/_*/**/*.{js,mjs,ts,mts}',
+      '/project/workspace/src/!(pages)/**/*',
+      '/project/workspace/src/pages/**/!(*.js|*.mjs|*.ts|*.mts)',
+      '/project/workspace/src/pages/**/_*.{js,mjs,ts,mts}',
+      '/project/workspace/src/pages/**/_*/**/*.{js,mjs,ts,mts}'
+    ],
+    exclude: [ 'astro', 'node-fetch', 'astro', 'node-fetch' ],
+    include: [
+      'astro > cssesc',
+      'astro > aria-query',
+      'astro > axobject-query'
+    ],
+    esbuildOptions: { preserveSymlinks: false }
+  },
+  plugins: [
+    'vite:build-metadata',
+    'vite:watch-package-data',
+    'vite:pre-alias',
+    'alias',
+    'astro:build',
+    'astro:markdown',
+    'astro-content-virtual-mod-plugin',
+    'astro:content-asset-propagation',
+    'astro:assets:esm',
+    'astro:i18n',
+    '@mdx-js/rollup',
+    'vite:resolve',
+    'vite:html-inline-proxy',
+    'vite:css',
+    'vite:esbuild',
+    'vite:json',
+    'vite:wasm-helper',
+    'vite:worker',
+    'vite:asset',
+    '@astro/rollup-plugin-astro-analyzer',
+    '@astro/plugin-build-internals',
+    '@astro/plugin-renderers',
+    '@astro/plugin-middleware-build',
+    '@astro/plugin-build-pages',
+    'astro:rollup-plugin-build-css',
+    'astro:rollup-plugin-css-scope-to',
+    'astro:head-metadata-build',
+    'astro:rollup-plugin-prerender',
+    'astro:content-build-plugin',
+    'astro:chunks',
+    'astro:build:normal',
+    'astro:scripts',
+    'astro:html',
+    'astro:postprocess',
+    'astro:integration-container',
+    'astro:content-imports',
+    '@astro/plugin-middleware',
+    'astro:assets',
+    'astro:prefetch',
+    'astro:transitions',
+    'astro:dev-toolbar',
+    'astro:vite-plugin-file-url',
+    'vite-plugin-starlight-user-config',
+    'vite-plugin-astro-expressive-code',
+    '@astrojs/mdx-postprocess',
+    'vite:wasm-fallback',
+    'astro:vite-plugin-env',
+    'vite:define',
+    'vite:css-post',
+    'vite:build-html',
+    'vite:worker-import-meta-url',
+    'vite:asset-import-meta-url',
+    'vite:force-systemjs-wrap-complete',
+    'commonjs',
+    'vite:data-uri',
+    'vite:dynamic-import-vars',
+    'vite:import-glob',
+    '@astro/plugin-build-manifest',
+    'astro:rollup-plugin-single-css',
+    'astro:rollup-plugin-inline-stylesheets',
+    '@astrojs/vite-plugin-astro-ssr-server',
+    'astro:scripts:page-ssr',
+    'astro:scanner',
+    'astro-inject-env-ts',
+    '@astrojs/vite-plugin-astro-ssr-manifest',
+    'vite:build-import-analysis',
+    'vite:esbuild-transpile',
+    'vite:reporter',
+    'vite:load-fallback'
+  ],
+  publicDir: '/project/workspace/public',
+  root: '/project/workspace',
+  envPrefix: 'PUBLIC_',
+  define: {
+    'import.meta.env.SITE': 'undefined',
+    'import.meta.env.BASE_URL': '"/"',
+    'import.meta.env.ASSETS_PREFIX': 'undefined',
+    __ASTRO_INTERNAL_I18N_CONFIG__: '{"base":"/","format":"directory","trailingSlash":"ignore","isBuild":true}'
+  },
+  server: {
+    preTransformRequests: true,
+    hmr: false,
+    proxy: {},
+    watch: { ignored: [Array] },
+    middlewareMode: true,
+    sourcemapIgnoreList: [Function: isInNodeModules$1],
+    fs: {
+      strict: true,
+      allow: [Array],
+      deny: [Array],
+      cachedChecks: undefined
+    }
+  },
+  resolve: {
+    mainFields: [ 'browser', 'module', 'jsnext:main', 'jsnext' ],
+    conditions: [ 'astro', 'astro' ],
+    extensions: [
+      '.mjs',  '.js',
+      '.mts',  '.ts',
+      '.jsx',  '.tsx',
+      '.json'
+    ],
+    dedupe: [ 'astro', 'astro' ],
+    preserveSymlinks: false,
+    alias: [
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object]
+    ]
+  },
+  ssr: {
+    target: 'node',
+    noExternal: [
+      'astro',              'astro/components',
+      '@nanostores/preact', '@fontsource/*',
+      '@astrojs/node',      '@astrojs/starlight',
+      '@astrojs/tailwind',  '@astrojs/mdx',
+      '@astrojs/sitemap',   'astro-expressive-code',
+      '@astrojs/node',      'astro',
+      'astro',              'astro/components',
+      '@nanostores/preact', '@fontsource/*',
+      '@astrojs/node',      '@astrojs/starlight',
+      '@astrojs/tailwind',  '@astrojs/mdx',
+      '@astrojs/sitemap',   'astro-expressive-code',
+      '@astrojs/node',      'astro'
+    ],
+    external: [ 'sharp', 'sharp' ],
+    optimizeDeps: { noDiscovery: true, esbuildOptions: [Object] }
+  },
+  build: {
+    target: 'esnext',
+    cssTarget: 'esnext',
+    outDir: '/project/workspace/dist/server/',
+    assetsDir: '_astro',
+    assetsInlineLimit: 4096,
+    cssCodeSplit: true,
+    sourcemap: false,
+    rollupOptions: { input: [], output: [Object] },
+    minify: false,
+    terserOptions: {},
+    write: true,
+    emptyOutDir: false,
+    copyPublicDir: false,
+    manifest: false,
+    lib: false,
+    ssr: true,
+    ssrManifest: false,
+    ssrEmitAssets: true,
+    reportCompressedSize: false,
+    chunkSizeWarningLimit: 500,
+    watch: null,
+    cssMinify: true,
+    modulePreload: { polyfill: false },
+    commonjsOptions: { include: [Array], extensions: [Array] },
+    dynamicImportVarsOptions: { warnOnError: true, exclude: [Array] }
+  },
+  css: { postcss: { plugins: [Array] }, lightningcss: undefined },
+  mode: 'production',
+  logLevel: 'error',
+  base: '/',
+  configFileDependencies: [],
+  inlineConfig: {
+    configFile: false,
+    cacheDir: '/project/workspace/node_modules/.vite/',
+    clearScreen: false,
+    customLogger: {
+      hasWarned: false,
+      info: [Function: info],
+      warn: [Function: warn],
+      warnOnce: [Function: warnOnce],
+      error: [Function: error],
+      clearScreen: [Function: clearScreen],
+      hasErrorLogged: [Function: hasErrorLogged]
+    },
+    appType: 'custom',
+    optimizeDeps: { entries: [Array], exclude: [Array] },
+    plugins: [
+      [Object], [Object], [Object],  [Object],
+      [Object], [Object], [Array],   [Object],
+      [Object], [Object], [Object],  [Object],
+      null,     false,    [Array],   [Object],
+      false,    [Object], undefined, [Object],
+      [Object], [Object], [Object],  [Object],
+      [Object], [Object], [Object],  [Object],
+      [Object], [Array],  [Object],  [Object],
+      [Object], [Array],  [Object],  [Object],
+      [Object], [Object], [Object],  [Object],
+      [Object], [Object], [Object]
+    ],
+    publicDir: '/project/workspace/public/',
+    root: '/project/workspace/',
+    envPrefix: 'PUBLIC_',
+    define: {
+      'import.meta.env.SITE': 'undefined',
+      'import.meta.env.BASE_URL': '"/"',
+      'import.meta.env.ASSETS_PREFIX': 'undefined'
+    },
+    server: { hmr: false, proxy: {}, watch: [Object], middlewareMode: true },
+    resolve: { alias: [Array], conditions: [Array], dedupe: [Array] },
+    ssr: { noExternal: [Array], external: [] },
+    build: {
+      target: 'esnext',
+      cssMinify: true,
+      assetsDir: '_astro',
+      emptyOutDir: false,
+      manifest: false,
+      outDir: '/project/workspace/dist/server/',
+      copyPublicDir: false,
+      rollupOptions: [Object],
+      ssr: true,
+      ssrEmitAssets: true,
+      minify: false,
+      modulePreload: [Object],
+      reportCompressedSize: false
+    },
+    css: { postcss: [Object] },
+    mode: 'production',
+    logLevel: 'error',
+    base: '/'
+  },
+  rawBase: '/',
+  command: 'build',
+  isWorker: false,
+  mainConfig: null,
+  bundleChain: [],
+  isProduction: true,
+  esbuild: { jsxDev: false },
+  preview: {
+    port: undefined,
+    strictPort: undefined,
+    host: undefined,
+    https: undefined,
+    open: undefined,
+    proxy: {},
+    cors: undefined,
+    headers: undefined
+  },
+  envDir: '/project/workspace',
+  env: { BASE_URL: '/', MODE: 'production', DEV: false, PROD: true },
+  assetsInclude: [Function: assetsInclude],
+  logger: {
+    hasWarned: false,
+    info: [Function: info],
+    warn: [Function: warn],
+    warnOnce: [Function: warnOnce],
+    error: [Function: error],
+    clearScreen: [Function: clearScreen],
+    hasErrorLogged: [Function: hasErrorLogged]
+  },
+  packageCache: Map(1) {
+    'fnpd_/project/workspace' => {
+      dir: '/project/workspace',
+      data: [Object],
+      hasSideEffects: [Function: hasSideEffects],
+      webResolvedImports: {},
+      nodeResolvedImports: {},
+      setResolvedCache: [Function: setResolvedCache],
+      getResolvedCache: [Function: getResolvedCache]
+    },
+    set: [Function (anonymous)]
+  },
+  createResolver: [Function: createResolver],
+  worker: { format: 'iife', plugins: '() => plugins', rollupOptions: {} },
+  experimental: { importGlobRestoreExtension: false, hmrPartialAccept: false },
+  getSortedPlugins: [Function: getSortedPlugins],
+  getSortedPluginHooks: [Function: getSortedPluginHooks]
+}
+09:30:18 [vite] ✓ built in 3.09s
+09:30:18 [build] ✓ Completed in 3.15s.
+
+ building client (vite) 
+09:30:18 [types] Added src/env.d.ts type declarations.
+2024-06-11T09:30:18.120Z vite:config using resolved config: {
+  configFile: undefined,
+  cacheDir: '/project/workspace/node_modules/.vite',
+  clearScreen: false,
+  customLogger: {
+    hasWarned: false,
+    info: [Function: info],
+    warn: [Function: warn],
+    warnOnce: [Function: warnOnce],
+    error: [Function: error],
+    clearScreen: [Function: clearScreen],
+    hasErrorLogged: [Function: hasErrorLogged]
+  },
+  appType: 'custom',
+  optimizeDeps: {
+    holdUntilCrawlEnd: true,
+    entries: [
+      '/project/workspace/src/!(pages)/**/*',
+      '/project/workspace/src/pages/**/!(*.js|*.mjs|*.ts|*.mts)',
+      '/project/workspace/src/pages/**/_*.{js,mjs,ts,mts}',
+      '/project/workspace/src/pages/**/_*/**/*.{js,mjs,ts,mts}',
+      '/project/workspace/src/!(pages)/**/*',
+      '/project/workspace/src/pages/**/!(*.js|*.mjs|*.ts|*.mts)',
+      '/project/workspace/src/pages/**/_*.{js,mjs,ts,mts}',
+      '/project/workspace/src/pages/**/_*/**/*.{js,mjs,ts,mts}'
+    ],
+    exclude: [ 'astro', 'node-fetch', 'astro', 'node-fetch' ],
+    include: [
+      'astro > cssesc',
+      'astro > aria-query',
+      'astro > axobject-query'
+    ],
+    esbuildOptions: { preserveSymlinks: false }
+  },
+  plugins: [
+    'vite:build-metadata',
+    'vite:watch-package-data',
+    'vite:pre-alias',
+    'alias',
+    '@astro/plugin-component-entry',
+    'astro:build',
+    'astro:markdown',
+    'astro-content-virtual-mod-plugin',
+    'astro:content-asset-propagation',
+    'astro:assets:esm',
+    'astro:i18n',
+    '@mdx-js/rollup',
+    'vite:modulepreload-polyfill',
+    'vite:resolve',
+    'vite:html-inline-proxy',
+    'vite:css',
+    'vite:esbuild',
+    'vite:json',
+    'vite:wasm-helper',
+    'vite:worker',
+    'vite:asset',
+    '@astro/plugin-build-internals',
+    'astro:rollup-plugin-build-css',
+    'astro:rollup-plugin-css-scope-to',
+    '@astro/rollup-plugin-astro-hoisted-scripts',
+    'astro:build:normal',
+    'astro:scripts',
+    'astro:html',
+    'astro:postprocess',
+    'astro:integration-container',
+    'astro:content-imports',
+    '@astro/plugin-middleware',
+    'astro:assets',
+    'astro:prefetch',
+    'astro:transitions',
+    'astro:dev-toolbar',
+    'astro:vite-plugin-file-url',
+    'vite-plugin-starlight-user-config',
+    'vite-plugin-astro-expressive-code',
+    '@astrojs/mdx-postprocess',
+    'vite:wasm-fallback',
+    'astro:vite-plugin-env',
+    'vite:define',
+    'vite:css-post',
+    'vite:build-html',
+    'vite:worker-import-meta-url',
+    'vite:asset-import-meta-url',
+    'vite:force-systemjs-wrap-complete',
+    'commonjs',
+    'vite:data-uri',
+    'vite:dynamic-import-vars',
+    'vite:import-glob',
+    'astro:rollup-plugin-single-css',
+    'astro:rollup-plugin-inline-stylesheets',
+    'astro:scripts:page-ssr',
+    'astro:scanner',
+    'astro-inject-env-ts',
+    '@astrojs/vite-plugin-astro-ssr-manifest',
+    'vite:build-import-analysis',
+    'vite:esbuild-transpile',
+    'vite:terser',
+    'vite:reporter',
+    'vite:load-fallback'
+  ],
+  publicDir: '/project/workspace/public',
+  root: '/project/workspace',
+  envPrefix: 'PUBLIC_',
+  define: {
+    'import.meta.env.SITE': 'undefined',
+    'import.meta.env.BASE_URL': '"/"',
+    'import.meta.env.ASSETS_PREFIX': 'undefined',
+    __ASTRO_INTERNAL_I18N_CONFIG__: '{"base":"/","format":"directory","trailingSlash":"ignore","isBuild":true}'
+  },
+  server: {
+    preTransformRequests: true,
+    hmr: false,
+    proxy: {},
+    watch: { ignored: [Array] },
+    middlewareMode: true,
+    sourcemapIgnoreList: [Function: isInNodeModules$1],
+    fs: {
+      strict: true,
+      allow: [Array],
+      deny: [Array],
+      cachedChecks: undefined
+    }
+  },
+  resolve: {
+    mainFields: [ 'browser', 'module', 'jsnext:main', 'jsnext' ],
+    conditions: [ 'astro', 'astro' ],
+    extensions: [
+      '.mjs',  '.js',
+      '.mts',  '.ts',
+      '.jsx',  '.tsx',
+      '.json'
+    ],
+    dedupe: [ 'astro', 'astro' ],
+    preserveSymlinks: false,
+    alias: [
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object]
+    ]
+  },
+  ssr: {
+    target: 'node',
+    noExternal: [
+      'astro',                 'astro/components',
+      '@nanostores/preact',    '@fontsource/*',
+      '@astrojs/node',         '@astrojs/starlight',
+      '@astrojs/tailwind',     '@astrojs/mdx',
+      '@astrojs/sitemap',      'astro-expressive-code',
+      '@astrojs/node',         'astro',
+      'astro/components',      '@nanostores/preact',
+      '@fontsource/*',         '@astrojs/node',
+      '@astrojs/starlight',    '@astrojs/tailwind',
+      '@astrojs/mdx',          '@astrojs/sitemap',
+      'astro-expressive-code', '@astrojs/node'
+    ],
+    external: [],
+    optimizeDeps: { noDiscovery: true, esbuildOptions: [Object] }
+  },
+  build: {
+    target: 'esnext',
+    cssTarget: 'esnext',
+    outDir: '/project/workspace/dist/client/',
+    assetsDir: '_astro',
+    assetsInlineLimit: 4096,
+    cssCodeSplit: true,
+    sourcemap: false,
+    rollupOptions: {
+      input: [Array],
+      output: [Object],
+      preserveEntrySignatures: 'exports-only'
+    },
+    minify: 'esbuild',
+    terserOptions: {},
+    write: true,
+    emptyOutDir: false,
+    copyPublicDir: true,
+    manifest: false,
+    lib: false,
+    ssr: false,
+    ssrManifest: false,
+    ssrEmitAssets: false,
+    reportCompressedSize: true,
+    chunkSizeWarningLimit: 500,
+    watch: null,
+    commonjsOptions: { include: [Array], extensions: [Array] },
+    dynamicImportVarsOptions: { warnOnError: true, exclude: [Array] },
+    modulePreload: { polyfill: true },
+    cssMinify: true
+  },
+  css: { postcss: { plugins: [Array] }, lightningcss: undefined },
+  mode: 'production',
+  base: '/',
+  configFileDependencies: [],
+  inlineConfig: {
+    configFile: false,
+    cacheDir: '/project/workspace/node_modules/.vite/',
+    clearScreen: false,
+    customLogger: {
+      hasWarned: false,
+      info: [Function: info],
+      warn: [Function: warn],
+      warnOnce: [Function: warnOnce],
+      error: [Function: error],
+      clearScreen: [Function: clearScreen],
+      hasErrorLogged: [Function: hasErrorLogged]
+    },
+    appType: 'custom',
+    optimizeDeps: { entries: [Array], exclude: [Array] },
+    plugins: [
+      [Object], [Object], [Array],   [Object],
+      null,     false,    [Array],   [Object],
+      false,    [Object], undefined, [Object],
+      [Object], [Object], [Object],  [Object],
+      [Object], [Object], [Object],  [Object],
+      [Object], [Array],  [Object],  [Object],
+      [Object], [Array],  [Object],  [Object],
+      [Object], [Object], [Object],  [Object],
+      [Object], [Object], [Object]
+    ],
+    publicDir: '/project/workspace/public/',
+    root: '/project/workspace/',
+    envPrefix: 'PUBLIC_',
+    define: {
+      'import.meta.env.SITE': 'undefined',
+      'import.meta.env.BASE_URL': '"/"',
+      'import.meta.env.ASSETS_PREFIX': 'undefined'
+    },
+    server: { hmr: false, proxy: {}, watch: [Object], middlewareMode: true },
+    resolve: { alias: [Array], conditions: [Array], dedupe: [Array] },
+    ssr: { noExternal: [Array], external: [] },
+    build: {
+      target: 'esnext',
+      assetsDir: '_astro',
+      emptyOutDir: false,
+      outDir: '/project/workspace/dist/client/',
+      copyPublicDir: true,
+      rollupOptions: [Object]
+    },
+    css: { postcss: [Object] },
+    mode: 'production',
+    base: '/'
+  },
+  rawBase: '/',
+  command: 'build',
+  isWorker: false,
+  mainConfig: null,
+  bundleChain: [],
+  isProduction: true,
+  esbuild: { jsxDev: false },
+  preview: {
+    port: undefined,
+    strictPort: undefined,
+    host: undefined,
+    https: undefined,
+    open: undefined,
+    proxy: {},
+    cors: undefined,
+    headers: undefined
+  },
+  envDir: '/project/workspace',
+  env: { BASE_URL: '/', MODE: 'production', DEV: false, PROD: true },
+  assetsInclude: [Function: assetsInclude],
+  logger: {
+    hasWarned: false,
+    info: [Function: info],
+    warn: [Function: warn],
+    warnOnce: [Function: warnOnce],
+    error: [Function: error],
+    clearScreen: [Function: clearScreen],
+    hasErrorLogged: [Function: hasErrorLogged]
+  },
+  packageCache: Map(1) {
+    'fnpd_/project/workspace' => {
+      dir: '/project/workspace',
+      data: [Object],
+      hasSideEffects: [Function: hasSideEffects],
+      webResolvedImports: {},
+      nodeResolvedImports: {},
+      setResolvedCache: [Function: setResolvedCache],
+      getResolvedCache: [Function: getResolvedCache]
+    },
+    set: [Function (anonymous)]
+  },
+  createResolver: [Function: createResolver],
+  worker: { format: 'iife', plugins: '() => plugins', rollupOptions: {} },
+  experimental: { importGlobRestoreExtension: false, hmrPartialAccept: false },
+  getSortedPlugins: [Function: getSortedPlugins],
+  getSortedPluginHooks: [Function: getSortedPluginHooks]
+}
+09:30:18 [vite] transforming...
+09:30:18 [vite] ✓ 12 modules transformed.
+09:30:18 [vite] rendering chunks...
+09:30:18 [vite] computing gzip size...
+09:30:18 [vite] dist/client/_astro/ec.3zb7u.js                                             2.31 kB
+09:30:18 [vite] dist/client/_astro/ec.d6kn2.css                                           18.16 kB │ gzip: 3.84 kB
+09:30:18 [vite] dist/client/_astro/Tabs.astro_astro_type_script_index_0_lang.CCIyraCc.js   1.45 kB │ gzip: 0.71 kB
+09:30:18 [vite] dist/client/_astro/page.LS5KDvwX.js                                        2.14 kB │ gzip: 0.95 kB
+09:30:18 [vite] ✓ built in 65ms
+
+ prerendering static routes 
+09:30:18 ▶ @astrojs/starlight/404.astro
+2024-06-11T09:30:18.214Z astro:build Generating: /404
+09:30:18   └─ /404.html2024-06-11T09:30:18.214Z astro:build Generating: /404
+ (+40ms)
+09:30:18 ▶ src/pages/schema/[...slug].astro
+2024-06-11T09:30:18.256Z astro:build ├── √ src/pages/schema/[...slug].astro → [3 pages]
+2024-06-11T09:30:18.256Z astro:build Generating: /schema/1
+09:30:18   ├─ /schema/1/index.html2024-06-11T09:30:18.256Z astro:build Generating: /schema/1
+ (+14ms)
+2024-06-11T09:30:18.270Z astro:build Generating: /schema/2
+09:30:18   ├─ /schema/2/index.html2024-06-11T09:30:18.270Z astro:build Generating: /schema/2
+ (+7ms)
+2024-06-11T09:30:18.277Z astro:build Generating: /schema/3
+09:30:18   └─ /schema/3/index.html2024-06-11T09:30:18.277Z astro:build Generating: /schema/3
+ (+9ms)
+09:30:18 ▶ @astrojs/starlight/index.astro
+2024-06-11T09:30:18.287Z astro:build ├── √ node_modules/@astrojs/starlight/index.astro → [3 pages]
+2024-06-11T09:30:18.287Z astro:build Generating: /guides/example
+09:30:18   ├─ /guides/example/index.html2024-06-11T09:30:18.287Z astro:build Generating: /guides/example
+ (+16ms)
+2024-06-11T09:30:18.303Z astro:build Generating: /
+09:30:18   ├─ /index.html2024-06-11T09:30:18.303Z astro:build Generating: /
+ (+28ms)
+2024-06-11T09:30:18.331Z astro:build Generating: /reference/example
+09:30:18   └─ /reference/example/index.html2024-06-11T09:30:18.331Z astro:build Generating: /reference/example
+ (+8ms)
+09:30:18 ✓ Completed in 149ms.
+
+09:30:18 
+ finalizing server assets 
+
+09:30:18 [build] Rearranging server assets...
+2024-06-11T09:30:18.347Z astro:build Additional assets copied   1718098212.8s
+
+Running Pagefind v1.1.0 (Extended)
+Running from: "/project/workspace/node_modules/@astrojs/starlight"
+Source:       "../../../dist/client"
+Output:       "../../../dist/client/pagefind"
+
+[Walking source directory]
+Found 7 files matching **/*.{html}
+
+[Parsing files]
+Found a data-pagefind-body element on the site.
+↳ Ignoring pages without this tag.
+
+[Reading languages]
+Discovered 1 language: en
+
+[Building search indexes]
+Total: 
+  Indexed 1 language
+  Indexed 6 pages
+  Indexed 95 words
+  Indexed 0 filters
+  Indexed 0 sorts
+
+Finished in 0.025 seconds
+09:30:18 [WARN] [@astrojs/sitemap] The Sitemap integration requires the `site` astro.config option. Skipping.
+09:30:18 [build] Server built in 4.47s
+09:30:18 [build] Complete!

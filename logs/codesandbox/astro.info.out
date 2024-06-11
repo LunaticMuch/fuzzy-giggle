@@ -1,0 +1,8 @@
+Astro                    v4.10.1
+Node                     v20.12.1
+System                   Linux (x64)
+Package Manager          npm
+Output                   hybrid
+Adapter                  @astrojs/node
+Integrations             @astrojs/starlight
+                         @astrojs/tailwind

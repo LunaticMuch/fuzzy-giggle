@@ -1,0 +1,73 @@
+
+> @example/starlight-tailwind@0.0.1 build
+> astro build
+
+09:29:40 [types] Added src/env.d.ts type declarations.
+09:29:41 [types] Added src/env.d.ts type declarations.
+09:29:41 [build] output: "hybrid"
+09:29:41 [build] directory: /project/workspace/dist/
+09:29:41 [build] adapter: @astrojs/node
+09:29:41 [build] Collecting build info...
+09:29:41 [build] ✓ Completed in 620ms.
+09:29:41 [build] Building hybrid entrypoints...
+09:29:41 [types] Added src/env.d.ts type declarations.
+09:29:44 [vite] ✓ built in 3.09s
+09:29:44 [build] ✓ Completed in 3.13s.
+
+ building client (vite) 
+09:29:44 [types] Added src/env.d.ts type declarations.
+09:29:44 [vite] transforming...
+09:29:44 [vite] ✓ 12 modules transformed.
+09:29:44 [vite] rendering chunks...
+09:29:44 [vite] computing gzip size...
+09:29:44 [vite] dist/client/_astro/ec.3zb7u.js                                             2.31 kB
+09:29:44 [vite] dist/client/_astro/ec.d6kn2.css                                           18.16 kB │ gzip: 3.84 kB
+09:29:44 [vite] dist/client/_astro/Tabs.astro_astro_type_script_index_0_lang.CCIyraCc.js   1.45 kB │ gzip: 0.71 kB
+09:29:44 [vite] dist/client/_astro/page.LS5KDvwX.js                                        2.14 kB │ gzip: 0.95 kB
+09:29:44 [vite] ✓ built in 70ms
+
+ prerendering static routes 
+09:29:44 ▶ @astrojs/starlight/404.astro
+09:29:44   └─ /404.html (+25ms)
+09:29:44 ▶ src/pages/schema/[...slug].astro
+09:29:44   ├─ /schema/1/index.html (+13ms)
+09:29:44   ├─ /schema/2/index.html (+21ms)
+09:29:44   └─ /schema/3/index.html (+10ms)
+09:29:44 ▶ @astrojs/starlight/index.astro
+09:29:44   ├─ /guides/example/index.html (+11ms)
+09:29:44   ├─ /index.html (+21ms)
+09:29:44   └─ /reference/example/index.html (+14ms)
+09:29:44 ✓ Completed in 145ms.
+
+09:29:44 
+ finalizing server assets 
+
+09:29:44 [build] Rearranging server assets...
+
+Running Pagefind v1.1.0 (Extended)
+Running from: "/project/workspace/node_modules/@astrojs/starlight"
+Source:       "../../../dist/client"
+Output:       "../../../dist/client/pagefind"
+
+[Walking source directory]
+Found 7 files matching **/*.{html}
+
+[Parsing files]
+Found a data-pagefind-body element on the site.
+↳ Ignoring pages without this tag.
+
+[Reading languages]
+Discovered 1 language: en
+
+[Building search indexes]
+Total: 
+  Indexed 1 language
+  Indexed 6 pages
+  Indexed 95 words
+  Indexed 0 filters
+  Indexed 0 sorts
+
+Finished in 0.024 seconds
+09:29:45 [WARN] [@astrojs/sitemap] The Sitemap integration requires the `site` astro.config option. Skipping.
+09:29:45 [build] Server built in 4.41s
+09:29:45 [build] Complete!
